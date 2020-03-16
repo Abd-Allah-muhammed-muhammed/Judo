@@ -38,6 +38,7 @@ public class HomeSliderAdapter extends RecyclerView.Adapter<HomeSliderAdapter.VH
         notifyDataSetChanged();
     }
 
+
     public HomeSliderAdapter(Activity activity) {
         this.activity = activity;
     }
@@ -63,7 +64,6 @@ public class HomeSliderAdapter extends RecyclerView.Adapter<HomeSliderAdapter.VH
 
                 openNewsActivity(holder.imageView);
 
-
             }
         });
     }
@@ -72,7 +72,10 @@ public class HomeSliderAdapter extends RecyclerView.Adapter<HomeSliderAdapter.VH
 
 
         Intent intent = new Intent(activity, NewsActivity.class);
-        ActivityOptionsCompat compat = ActivityOptionsCompat.makeSceneTransitionAnimation( activity,image, Objects.requireNonNull(ViewCompat.getTransitionName(image)));
+        ActivityOptionsCompat compat = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+            compat = ActivityOptionsCompat.makeSceneTransitionAnimation( activity,image, Objects.requireNonNull(ViewCompat.getTransitionName(image)));
+        }
         context.startActivity(intent,compat.toBundle());
     }
 
