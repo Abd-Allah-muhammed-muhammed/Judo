@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/_8"
+        android:layout_marginEnd="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_view"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="2dp"
+            app:riv_border_color="@color/white"
+            android:src="@drawable/photo_1"
+            android:transitionName="news_image"
+            android:scaleType="centerCrop"
+            tools:targetApi="lollipop" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradian"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:shadowColor="@android:color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="50"
+        android:layout_marginEnd="@dimen/_24"
+        android:layout_marginStart="@dimen/_24"
+        android:id="@+id/title_view"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/arabic_regular"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8"
+        android:text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_act"
+        android:title="الرئيسية" />
+    <item
+        android:id="@+id/win"
+        android:icon="@drawable/ic_win"
+        android:title="البطولات" />
+    <item
+        android:id="@+id/videos"
+        android:icon="@drawable/ic_vedios"
+        android:title="الفديوهات" />
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_more"
+        android:title="المزيد" />
+</menu>
