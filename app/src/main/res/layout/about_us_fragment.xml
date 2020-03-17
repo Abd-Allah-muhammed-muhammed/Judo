@@ -2,14 +2,15 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    >
+
 
     <RelativeLayout
-        android:background="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.news.NewsFragment">
 
+
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/toolbar"
@@ -19,7 +20,7 @@
 
 
             <ImageView
-                android:id="@+id/back"
+                android:id="@+id/back_about"
                 android:layout_width="28dp"
                 android:layout_height="@dimen/_24"
                 android:layout_marginEnd="@dimen/_27"
@@ -37,10 +38,10 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="11dp"
-                android:layout_toEndOf="@+id/back"
-                android:layout_toRightOf="@+id/back"
+                android:layout_toEndOf="@+id/back_about"
+                android:layout_toRightOf="@+id/back_about"
                 android:fontFamily="@font/arabic_semi_bold"
-                android:text="أخر الاخبار"
+                android:text="@string/about_us"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -48,30 +49,17 @@
 
 
 
-
-        <TextView
-            android:layout_marginEnd="@dimen/_16dp"
-            android:layout_marginStart="@dimen/_16dp"
-            android:textSize="16sp"
-            android:fontFamily="@font/arabic_semi_bold"
-            android:textColor="@color/black"
-            android:text="@string/new_"
-            android:layout_below="@+id/toolbar"
-            android:layout_marginTop="@dimen/_20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/new_news"/>
-
-
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_news"
-            tools:itemCount="5"
+            android:layout_marginTop="@dimen/_4"
+            tools:listitem="@layout/item_about_union"
+            tools:itemCount="4"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/rv_about_us"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/new_news"
-            android:layout_marginTop="8dp"
-            tools:listitem="@layout/item_news" />
+            android:layout_height="wrap_content"/>
+
 
 
     </RelativeLayout>
+
 </layout>

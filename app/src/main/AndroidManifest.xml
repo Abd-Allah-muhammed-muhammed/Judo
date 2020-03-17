@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.news.NewsActivity"></activity>
+        <activity android:name=".ui.about_us.AboutUsActivity"></activity>
+        <activity android:name=".ui.news.NewsActivity" />
         <activity android:name=".ui.hom.HomActivity" />
         <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>

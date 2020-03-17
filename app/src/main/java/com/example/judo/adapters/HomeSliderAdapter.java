@@ -72,12 +72,14 @@ public class HomeSliderAdapter extends RecyclerView.Adapter<HomeSliderAdapter.VH
 
 
         Intent intent = new Intent(activity, NewsActivity.class);
+        intent.putExtra("id",1);
         ActivityOptionsCompat compat = null;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
             compat = ActivityOptionsCompat.makeSceneTransitionAnimation( activity,image, Objects.requireNonNull(ViewCompat.getTransitionName(image)));
         }
         context.startActivity(intent,compat.toBundle());
     }
+
 
     @Override
     public int getItemCount() {

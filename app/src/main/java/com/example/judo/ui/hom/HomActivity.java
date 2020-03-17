@@ -1,20 +1,35 @@
 package com.example.judo.ui.hom;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.view.View;
+import android.view.Window;
+import android.widget.ImageView;
+
 import com.example.judo.R;
 import com.example.judo.adapters.HomeSliderAdapter;
 import com.example.judo.databinding.ActivityHomBinding;
 import com.example.judo.model.SliderModelHome;
+import com.example.judo.ui.about_us.AboutUsActivity;
+import com.example.judo.ui.news.NewsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomActivity extends AppCompatActivity {
+import static com.example.judo.helper.HelperMethods.fullScreen;
+
+public class HomActivity extends AppCompatActivity implements View.OnClickListener {
 
     ActivityHomBinding binding ;
 
@@ -23,7 +38,10 @@ public class HomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_hom);
+
         binding.setLifecycleOwner(this);
+        binding.moreTv.setOnClickListener(this);
+        binding.layoutAboutUs.setOnClickListener(this);
         initSlider();
         getData();
 
@@ -69,6 +87,45 @@ public class HomActivity extends AppCompatActivity {
     public void onStop()
     {
         super.onStop();
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    @Override
+    public void onClick(View v) {
+
+        int id = v.getId();
+        switch (id) {
+
+            case R.id.more_tv:
+                openNewsActivity();
+                break;
+
+            case R.id.layout_about_us:
+
+                openAboutUs();
+
+                break;
+
+        }
+
+
+    }
+
+    private void openAboutUs() {
+
+        Intent intent = new Intent(HomActivity.this, AboutUsActivity.class);
+        startActivity(intent);
+
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void openNewsActivity() {
+
+        Intent intent = new Intent(HomActivity.this, NewsActivity.class);
+        intent.putExtra("id",0);
+        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+
 
     }
 }

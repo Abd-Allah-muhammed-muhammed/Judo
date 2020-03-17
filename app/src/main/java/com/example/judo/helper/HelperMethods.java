@@ -20,6 +20,13 @@ public final class HelperMethods {
 
     }
 
+    public static void replace(Fragment fragment, int id, FragmentTransaction fragmentTransaction) {
+        FragmentTransaction transaction = fragmentTransaction;
+        transaction.replace(id, fragment);
+        transaction.commitNow();
+
+    }
+
 
     public static void fullScreen(Activity activity){
 

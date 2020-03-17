@@ -1,24 +1,33 @@
 package com.example.judo.ui.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.judo.R;
+import com.example.judo.databinding.ActivitySplashBinding;
+import com.example.judo.model.SliderModelHome;
 import com.example.judo.ui.hom.HomActivity;
+
+import static com.example.judo.helper.HelperMethods.fullScreen;
 
 public class SplashActivity extends AppCompatActivity {
     Thread splashTread;
+    ActivitySplashBinding binding ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        fullScreen(this);
+
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_splash);
 
         startSplash();
     }
 
     private void startSplash() {
+
 
         splashTread = new Thread() {
             @Override

@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Judo</string>
     <string name="mor">More</string>
+    <string name="new_"> News</string>
+
+    <string name="about_us">About Union</string>
+
+
+
+    <string name="union_history">Union History</string>
+    <string name="union_achievements">Union Achievements</string>
+    <string name="what_distinguishes_the_union">What Distinguishes The Union</string>
+
 </resources>

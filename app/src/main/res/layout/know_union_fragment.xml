@@ -1,0 +1,133 @@
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56dp">
+
+
+            <ImageView
+                android:id="@+id/back_about"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/_24"
+                android:layout_marginEnd="@dimen/_27"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:src="@drawable/ic_left_black"
+                android:layout_marginRight="@dimen/_27"
+                android:layout_marginLeft="@dimen/_16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/back_about"
+                android:layout_toRightOf="@+id/back_about"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:text="@string/about_us"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <ScrollView
+
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="127.8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/saudi_union" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24.8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/arabic_bold"
+                    android:text="@string/union_history"
+                    android:textColor="@color/green_title_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arabic_regular"
+                    android:text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات للدرجة الأولى بمكة"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24.8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/arabic_bold"
+                    android:text="@string/union_achievements"
+                    android:textColor="@color/green_title_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arabic_regular"
+                    android:text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات للدرجة الأولى بمكة"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24.8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/arabic_bold"
+                    android:text="@string/what_distinguishes_the_union"
+                    android:textColor="@color/green_title_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:paddingBottom="@dimen/_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arabic_regular"
+                    android:text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات للدرجة الأولى بمكة"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</layout>

@@ -2,4 +2,10 @@
 <resources>
     <string name="app_name">Judo</string>
     <string name="mor">المزيد</string>
+    <string name="new_">الاحدث</string>
+    <string name="about_us">عن الاتحاد</string>
+    <string name="union_history">تاريخ الاتحاد</string>
+    <string name="union_achievements">إنجازات الاتحاد</string>
+    <string name="what_distinguishes_the_union">ما يميز الاتحاد</string>
+
 </resources>
