@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout        xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_play_filter"
+            android:layout_margin="@dimen/_8"
+            android:fontFamily="@font/arabic_medium"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="@dimen/_12dp"
+            android:background="@drawable/bg_text"
+            android:text="لاعبين المنتخب"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</layout>

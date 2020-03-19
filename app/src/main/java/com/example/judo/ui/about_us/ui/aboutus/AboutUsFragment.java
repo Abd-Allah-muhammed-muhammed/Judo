@@ -1,6 +1,7 @@
 package com.example.judo.ui.about_us.ui.aboutus;
 
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -46,15 +47,20 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
         mViewModel = ViewModelProviders.of(this).get(AboutUsViewModel.class);
 
         binding.backAbout.setOnClickListener(this);
-        List<AboutUsModel> dataAbout = mViewModel.getDataAbout();
+       mViewModel.getDataAbout().observe(getViewLifecycleOwner(), new Observer<List<AboutUsModel>>() {
+           @Override
+           public void onChanged(List<AboutUsModel> aboutUsModels) {
 
-        adapter = new AboutUsAdapter();
-        binding.rvAboutUs.setLayoutManager(new LinearLayoutManager(getContext()));
-        binding.rvAboutUs.setAdapter(adapter);
+               adapter = new AboutUsAdapter();
+               binding.rvAboutUs.setLayoutManager(new LinearLayoutManager(getContext()));
+               binding.rvAboutUs.setAdapter(adapter);
 
-        if (!dataAbout.isEmpty()) {
-            adapter.setAboutUsModels(dataAbout);
-        }
+               if (!aboutUsModels.isEmpty()) {
+                   adapter.setAboutUsModels(aboutUsModels);
+               }
+           }
+       });
+
 
 
 

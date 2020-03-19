@@ -163,6 +163,7 @@
                         android:orientation="horizontal">
 
                         <RelativeLayout
+                            android:id="@+id/layout_sections"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_12dp"

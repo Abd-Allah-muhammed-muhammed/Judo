@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <variable
+            name="section"
+            type="com.example.judo.model.sections.SectionModel" />
+    </data>
+
+    <LinearLayout
+
+        android:id="@+id/layout_section"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@{section.image}"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{section.name}"
+                android:textSize="14sp"
+                android:fontFamily="@font/arabic_medium"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/arabic_regular"
+                android:text="@{section.type}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#80808080"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</layout>

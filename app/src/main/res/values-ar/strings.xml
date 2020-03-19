@@ -8,5 +8,10 @@
     <string name="union_achievements">إنجازات الاتحاد</string>
     <string name="what_distinguishes_the_union">ما يميز الاتحاد</string>
     <string name="what_is_our_message">ماهي رسالتنا؟</string>
+    <string name="sections">اقسام الاتحاد</string>
+    <string name="mangment">اداريين</string>
+    <string name="trainers">مدربين</string>
+    <string name="referee">حكام</string>
+    <string name="players">الاعبين</string>
 
 </resources>

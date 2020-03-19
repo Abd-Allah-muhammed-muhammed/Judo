@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.sections.players.PlayersFragment">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56dp">
+
+
+            <ImageView
+                android:id="@+id/back_players"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/_24"
+                android:layout_marginEnd="@dimen/_27"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:src="@drawable/ic_left"
+                android:layout_marginRight="@dimen/_27"
+                android:layout_marginLeft="@dimen/_16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/back_players"
+                android:layout_toRightOf="@+id/back_players"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:text="@string/players"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/rv_filter"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            tools:listitem="@layout/item_filter"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_23"
+            android:id="@+id/rv_players"
+            tools:listitem="@layout/item_mangment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_filter"/>
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56dp">
+
+
+            <ImageView
+                android:id="@+id/back_trainers"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/_24"
+                android:layout_marginEnd="@dimen/_27"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:src="@drawable/ic_left"
+                android:layout_marginRight="@dimen/_27"
+                android:layout_marginLeft="@dimen/_16dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toEndOf="@+id/back_trainers"
+                android:layout_toRightOf="@+id/back_trainers"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:text="@string/trainers"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="شكر وتقدير"
+            android:id="@+id/thanks"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/arabic_semi_bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="لكل من ساهم في تطوير وبناء الاتحاد"
+            android:id="@+id/for_all"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/thanks"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/arabic_regular"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            tools:listitem="@layout/item_mangment"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_trainers"
+            android:layout_below="@id/for_all"
+            android:layout_marginTop="@dimen/_24"
+            />
+
+
+    </RelativeLayout>
+
+</layout>
