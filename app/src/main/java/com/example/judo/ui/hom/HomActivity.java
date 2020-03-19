@@ -22,6 +22,7 @@ import com.example.judo.adapters.HomeSliderAdapter;
 import com.example.judo.databinding.ActivityHomBinding;
 import com.example.judo.model.SliderModelHome;
 import com.example.judo.ui.about_us.AboutUsActivity;
+import com.example.judo.ui.courses.CoursesActivity;
 import com.example.judo.ui.news.NewsActivity;
 import com.example.judo.ui.sections.SectionsActivity;
 
@@ -44,6 +45,7 @@ public class HomActivity extends AppCompatActivity implements View.OnClickListen
         binding.moreTv.setOnClickListener(this);
         binding.layoutAboutUs.setOnClickListener(this);
         binding.layoutSections.setOnClickListener(this);
+        binding.layoutCourses.setOnClickListener(this);
         initSlider();
         getData();
 
@@ -113,8 +115,18 @@ public class HomActivity extends AppCompatActivity implements View.OnClickListen
                 openSections();
                 break;
 
+            case R.id.layout_courses:
+                openCourses();
+
+
         }
 
+
+    }
+
+    private void openCourses() {
+        Intent intent = new Intent(HomActivity.this, CoursesActivity.class);
+        startActivity(intent);
 
     }
 

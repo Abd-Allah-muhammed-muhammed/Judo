@@ -16,6 +16,7 @@ public class AboutUsModel {
     }
 
 
+
     public int getLogo() {
         return logo;
     }

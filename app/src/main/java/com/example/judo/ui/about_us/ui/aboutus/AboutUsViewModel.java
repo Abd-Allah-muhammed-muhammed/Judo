@@ -21,7 +21,7 @@ public class AboutUsViewModel extends ViewModel {
 
         aboutUsModels.add(new AboutUsModel(R.drawable.logo_round,"تعرف على الاتحاد"));
         aboutUsModels.add(new AboutUsModel(R.drawable.msg,"رسالة الاتحاد"));
-        aboutUsModels.add(new AboutUsModel(R.drawable.target,"تأهداف الاتحاد"));
+        aboutUsModels.add(new AboutUsModel(R.drawable.target,"أهداف الاتحاد"));
         aboutUsModels.add(new AboutUsModel(R.drawable.founders,"مؤسسين الاتحاد"));
 
         data.setValue(aboutUsModels);

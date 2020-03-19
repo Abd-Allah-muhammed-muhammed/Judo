@@ -269,6 +269,7 @@
                         </RelativeLayout>
 
                         <RelativeLayout
+                            android:id="@+id/layout_courses"
                             android:layout_width="0dp"
                             android:layout_height="156dp"
                             android:layout_marginEnd="@dimen/_12dp"

@@ -1,14 +1,16 @@
-package com.example.judo.model.news_item;
+package com.example.judo.model.courses;
 
-public class NewsItemModel {
+import android.widget.ImageView;
+
+import androidx.databinding.BindingAdapter;
+
+public class CoursesModel {
 
     String image ;
     String titel ;
     String date ;
 
-
-
-    public NewsItemModel(String image, String titel, String date) {
+    public CoursesModel(String image, String titel, String date) {
         this.image = image;
         this.titel = titel;
         this.date = date;
@@ -37,5 +39,12 @@ public class NewsItemModel {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+
+
+    @BindingAdapter({"android:src"})
+    public static void setImageViewResource(ImageView imageView, int resource) {
+        imageView.setImageResource(resource);
     }
 }
