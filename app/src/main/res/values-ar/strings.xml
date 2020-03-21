@@ -14,5 +14,19 @@
     <string name="referee">حكام</string>
     <string name="players">الاعبين</string>
     <string name="courses">الدورات التدريبية</string>
+    <string name="course_date_start">تاريخ بدأ الدورة</string>
+    <string name="course_age">السن</string>
+    <string name="course_cost">التكلفة</string>
+    <string name="course_duration">المدة</string>
+    <string name="comptetion_place">مكان البطولة</string>
+    <string name="connect_us">تواصل معنا</string>
+    <string name="connect_us_from">يمكنك التواصل معنا من خلال حسابتنا الرسمية</string>
+    <string name="or_">او عن طريق</string>
+    <string name="call">الاتصال</string>
+    <string name="union_message">رسالة الاتحاد</string>
+    <string name="know_union">تعرف علي الاتحاد</string>
+    <string name="our_motto">شعارنا</string>
+
+
 
 </resources>

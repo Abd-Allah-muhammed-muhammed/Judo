@@ -1,5 +1,6 @@
 package com.example.judo.ui.about_us.union_message;
 
+import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -13,10 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.judo.R;
+import com.example.judo.databinding.UnionMessageFragmentBinding;
 
 public class UnionMessageFragment extends Fragment {
 
     private UnionMessageViewModel mViewModel;
+    private UnionMessageFragmentBinding binding ;
 
     public static UnionMessageFragment newInstance() {
         return new UnionMessageFragment();
@@ -25,7 +28,16 @@ public class UnionMessageFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.union_message_fragment, container, false);
+
+        binding = DataBindingUtil.inflate(inflater,R.layout.union_message_fragment, container, false);
+        binding.backAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
+
+        return binding.getRoot();
     }
 
 

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.more.MoreFragment">
+
+
+            <TextView
+                android:id="@+id/tv_about_app"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="عن التطبيق"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/about_app"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/arabic_regular"
+                android:text="تطبيق الاتحاد السعودي للجودي هو التطبيق الرسمي لرياضة الجودو بالسعودية يتيح للمستخدم كل المعلومات عن الاتحاد والأخبار الجديدة
+كذلك البطولات والدورات وغيرها من المزايا"
+                android:layout_below="@+id/tv_about_app"/>
+            <TextView
+                android:layout_below="@id/about_app"
+                android:id="@+id/our_motto"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_32"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="@string/our_motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/motto"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sp"
+                android:fontFamily="@font/arabic_regular"
+
+                android:text="شعارنا نصنع أبطال من الصغار للكبار"
+                android:layout_below="@+id/our_motto"/>
+
+
+
+            <TextView
+                android:layout_below="@id/motto"
+                android:id="@+id/help_us_"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_32"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="ساعدنا باقتراحك لنستمر بالتطوير"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_write_message"
+                android:background="@drawable/bg_text_help_us"
+
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_below="@+id/help_us_"
+                android:layout_width="match_parent"
+                android:layout_height="118dp">
+
+
+                <EditText
+
+                    android:background="@android:color/transparent"
+                    android:id="@+id/write_message_tv"
+                    android:layout_margin="@dimen/_12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:fontFamily="@font/arabic_regular"
+                    android:textColor="@color/black"
+                    android:lineSpacingExtra="15sp"
+                    android:hint="اكتب رسالتك أو اقتراحك هن"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send_now"
+                android:background="@drawable/shap_button_more"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ارسال الان"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/arabic_medium"
+                android:layout_below="@+id/layout_write_message"/>
+
+            <RelativeLayout
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_below="@+id/send_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/layout_share_app"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_share_app">
+
+
+                    <ImageView
+                        android:src="@drawable/ic_share_green"
+                        android:layout_width="@dimen/_18"
+                        android:layout_height="@dimen/_18"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+
+                        android:paddingStart="@dimen/_12dp"
+                        android:paddingEnd="@dimen/_12dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="24dp"
+                        android:layout_weight="1"
+                        android:text="مشاركة التطبيق"
+                        android:fontFamily="@font/arabic_medium"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_14sp"
+                        android:layout_marginLeft="24dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_arrow_small_green"
+                        android:layout_marginRight="14dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:id="@+id/layout_rate_app"
+android:layout_below="@+id/layout_share_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_rate_app">
+
+
+                    <ImageView
+                        android:src="@drawable/ic_star"
+                        android:layout_width="@dimen/_18"
+                        android:layout_height="@dimen/_18"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+
+                        android:paddingStart="@dimen/_12dp"
+                        android:paddingEnd="@dimen/_12dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="24dp"
+                        android:layout_weight="1"
+                        android:text="مشاركة التطبيق"
+                        android:fontFamily="@font/arabic_medium"
+                        android:textColor="#ffc420"
+                        android:textSize="@dimen/_14sp"
+                        android:layout_marginLeft="24dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_arrow_small_yellow"
+                        android:layout_marginRight="14dp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</layout>

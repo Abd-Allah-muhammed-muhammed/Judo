@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.hom.HomFragment">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.hom.HomActivity">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_more"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/_12dp">
+
+
+                <TextView
+                    android:id="@+id/new_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="16dp"
+                    android:fontFamily="@font/arabic_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="اخر الاخبار"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/more_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:layout_marginRight="@dimen/_16dp"
+                    android:background="@drawable/bg_text"
+                    android:fontFamily="@font/arabic_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_20dp"
+                    android:paddingEnd="@dimen/_20dp"
+                    android:text="@string/mor"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_more">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    tools:listitem="@layout/item_slider" />
+
+
+            </RelativeLayout>
+
+            <TextView
+
+                android:id="@+id/sections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_news"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="@dimen/_32"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginRight="17dp"
+                android:fontFamily="@font/arabic_semi_bold"
+                android:gravity="center_vertical"
+                android:text="اقسام الاتحاد"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ScrollView
+                android:id="@+id/scrol_sections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/navigation"
+                android:layout_below="@+id/sections">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/layout_sections"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_12dp"
+                                android:layout_marginEnd="@dimen/_12dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_item">
+
+
+                                <ImageView
+                                    android:id="@+id/logo_sections"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_22dp"
+                                    android:src="@drawable/ic_martial_art" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/logo_sections"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_16dp"
+                                    android:fontFamily="@font/arabic_semi_bold"
+                                    android:text="اقسام الاتحاد"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+
+                                android:id="@+id/layout_about_us"
+                                android:layout_width="0dp"
+                                android:layout_height="156dp"
+                                android:layout_marginEnd="@dimen/_12dp"
+                                android:layout_marginRight="@dimen/_12dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_item">
+
+
+                                <ImageView
+                                    android:id="@+id/logo_about"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_22dp"
+                                    android:src="@drawable/logo_round" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/logo_about"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_24"
+                                    android:fontFamily="@font/arabic_semi_bold"
+                                    android:text="عن الإتحاد"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="@dimen/_12dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="156dp"
+                                android:layout_marginStart="@dimen/_12dp"
+                                android:layout_marginEnd="@dimen/_12dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_item">
+
+
+                                <ImageView
+                                    android:id="@+id/logo_connect_us"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_22dp"
+                                    android:src="@drawable/ic_call_center_agent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/logo_connect_us"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_16dp"
+                                    android:fontFamily="@font/arabic_semi_bold"
+                                    android:text="تواصل معنا"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layout_courses"
+                                android:layout_width="0dp"
+                                android:layout_height="156dp"
+                                android:layout_marginEnd="@dimen/_12dp"
+                                android:layout_marginRight="@dimen/_12dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_item">
+
+
+                                <ImageView
+                                    android:id="@+id/logo_medal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_22dp"
+                                    android:src="@drawable/ic_medal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/logo_medal"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/_24"
+                                    android:fontFamily="@font/arabic_semi_bold"
+                                    android:text="الدورات التدريبية"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

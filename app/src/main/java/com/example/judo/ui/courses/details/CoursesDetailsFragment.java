@@ -1,4 +1,4 @@
-package com.example.judo.ui.about_us.know_union;
+package com.example.judo.ui.courses.details;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;
@@ -14,22 +14,22 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.judo.R;
-import com.example.judo.databinding.KnowUnionFragmentBinding;
+import com.example.judo.databinding.CoursesDetailsFragmentBinding;
 
-public class KnowUnionFragment extends Fragment {
+public class CoursesDetailsFragment extends Fragment {
 
-    private KnowUnionViewModel mViewModel;
-    private KnowUnionFragmentBinding binding;
+    private CoursesDetailsViewModel mViewModel;
+    private CoursesDetailsFragmentBinding binding ;
 
-    public static KnowUnionFragment newInstance() {
-        return new KnowUnionFragment();
+    public static CoursesDetailsFragment newInstance() {
+        return new CoursesDetailsFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = DataBindingUtil.inflate(inflater,R.layout.know_union_fragment, container, false);
-        binding.backAbout.setOnClickListener(new View.OnClickListener() {
+        binding = DataBindingUtil.inflate(inflater,R.layout.courses_details_fragment, container, false);
+        binding.backDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getActivity().onBackPressed();
@@ -41,7 +41,7 @@ public class KnowUnionFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(KnowUnionViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(CoursesDetailsViewModel.class);
 
     }
 

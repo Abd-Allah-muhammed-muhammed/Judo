@@ -1,80 +1,44 @@
 package com.example.judo.ui.hom;
 
-import androidx.annotation.RequiresApi;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityOptionsCompat;
-import androidx.core.view.ViewCompat;
 import androidx.databinding.DataBindingUtil;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.app.ActivityOptions;
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
-import android.transition.Explode;
+import android.os.PersistableBundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.widget.ImageView;
 
 import com.example.judo.R;
-import com.example.judo.adapters.HomeSliderAdapter;
+
 import com.example.judo.databinding.ActivityHomBinding;
-import com.example.judo.model.SliderModelHome;
-import com.example.judo.ui.about_us.AboutUsActivity;
-import com.example.judo.ui.courses.CoursesActivity;
-import com.example.judo.ui.news.NewsActivity;
-import com.example.judo.ui.sections.SectionsActivity;
+import com.example.judo.ui.more.MoreFragment;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.judo.ui.vedios.VediosFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.judo.helper.HelperMethods.fullScreen;
 
-public class HomActivity extends AppCompatActivity implements View.OnClickListener {
+
+import static com.example.judo.helper.HelperMethods.replace;
+
+public class HomActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     ActivityHomBinding binding ;
 
-    private HomeSliderAdapter sliderAdapter ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_hom);
-
+        replace(HomFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction());
         binding.setLifecycleOwner(this);
-        binding.moreTv.setOnClickListener(this);
-        binding.layoutAboutUs.setOnClickListener(this);
-        binding.layoutSections.setOnClickListener(this);
-        binding.layoutCourses.setOnClickListener(this);
-        initSlider();
-        getData();
+        setSupportActionBar(binding.toolbar);
 
-    }
+        binding.navigation.setOnNavigationItemSelectedListener(this);
 
 
-
-    private void getData() {
-        List<SliderModelHome> listSlider = new ArrayList<>();
-        listSlider.add(new SliderModelHome("https://wallpaperaccess.com/full/124582.jpg"
-                ,"بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
-
-
-        listSlider.add(new SliderModelHome("https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg"
-                ,"بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
-
-        listSlider.add(new SliderModelHome("https://www.robin-noorda.com/uploads/1/6/8/3/16830688/3347022_orig.jpg"
-                ,"بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
-
-        sliderAdapter.setList(listSlider);
-
-
-    }
-
-    private void initSlider() {
-
-        binding.viewPager.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
-        sliderAdapter = new HomeSliderAdapter(HomActivity.this);
-        binding.viewPager.setAdapter(sliderAdapter);
 
 
     }
@@ -82,76 +46,48 @@ public class HomActivity extends AppCompatActivity implements View.OnClickListen
 
 
     @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-
-    @Override
-    public void onStop()
-    {
-        super.onStop();
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
-    public void onClick(View v) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        int id = v.getId();
-        switch (id) {
+        switch (item.getItemId()) {
 
-            case R.id.more_tv:
-                openNewsActivity();
+            case R.id.nv_more:
+                binding.smallLogo.setVisibility(View.INVISIBLE);
+                binding.tollbarTitle.setText("المزيد");
+
+                replace(MoreFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"more");
                 break;
 
-            case R.id.layout_about_us:
 
-                openAboutUs();
+            case R.id._nv_home :
+                binding.smallLogo.setVisibility(View.VISIBLE);
+                binding.tollbarTitle.setText("الاتحاد السعودي للجودو");
+
+                replace(HomFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"home_fragment");
 
                 break;
 
-            case R.id.layout_sections:
-                openSections();
+            case  R.id.nv_videos:
+                binding.smallLogo.setVisibility(View.INVISIBLE);
+                binding.tollbarTitle.setText("الفديوهات");
+                replace(VediosFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
+
                 break;
 
-            case R.id.layout_courses:
-                openCourses();
 
 
         }
 
 
+
+        return false;
     }
 
-    private void openCourses() {
-        Intent intent = new Intent(HomActivity.this, CoursesActivity.class);
-        startActivity(intent);
-
-    }
-
-    private void openSections() {
 
 
-        Intent intent = new Intent(HomActivity.this, SectionsActivity.class);
-        startActivity(intent);
-
-    }
-
-    private void openAboutUs() {
-
-        Intent intent = new Intent(HomActivity.this, AboutUsActivity.class);
-        startActivity(intent);
-
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void openNewsActivity() {
-
-        Intent intent = new Intent(HomActivity.this, NewsActivity.class);
-        intent.putExtra("id",0);
-        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-
-
-    }
 }

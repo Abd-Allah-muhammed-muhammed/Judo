@@ -20,6 +20,7 @@ import com.example.judo.databinding.ItemCoursesBinding;
 import com.example.judo.databinding.ItemNewsBinding;
 import com.example.judo.model.courses.CoursesModel;
 import com.example.judo.model.news_item.NewsItemModel;
+import com.example.judo.ui.courses.details.CoursesDetailsFragment;
 import com.example.judo.ui.news_details.NewsDetailsFragment;
 
 import java.util.ArrayList;
@@ -58,6 +59,13 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.VH>{
         holder.binding.setCourse(coursesModel);
         ImageView topicImage = holder.binding.topicImage;
         Glide.with(context).load(coursesModel.getImage()).into(topicImage);
+        holder.binding.cardItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                replace(CoursesDetailsFragment.newInstance(),R.id.container_courses,((FragmentActivity)context).getSupportFragmentManager().beginTransaction(),"courses_details");
+            }
+        });
 
 
     }

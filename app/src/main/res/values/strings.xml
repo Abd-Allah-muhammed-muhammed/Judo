@@ -15,5 +15,18 @@
     <string name="what_is_our_message">What is our message?</string>
     <string name="players">Players</string>
     <string name="courses">Courses</string>
+    <string name="course_date_start">Course Date Start</string>
+    <string name="course_age">Age</string>
+    <string name="course_cost">Cost</string>
+    <string name="course_duration">Duration</string>
+    <string name="comptetion_place">Competition Place </string>
+    <string name="connect_us">Connect Us</string>
+    <string name="connect_us_from">You can Connect Us Through Our Official Account </string>
+    <string name="or_">Or By </string>
+    <string name="call">Call</string>
+    <string name="union_message">Union Message</string>
+    <string name="know_union">Know The Union</string>
+    <string name="our_motto">Our Motto</string>
+
 
 </resources>

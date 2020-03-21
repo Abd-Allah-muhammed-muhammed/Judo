@@ -4,19 +4,19 @@
 
     <item
 
-        android:id="@+id/home"
-        android:icon="@drawable/ic_home_act"
+        android:id="@+id/_nv_home"
+        android:icon="@drawable/ic_home"
         android:title="الرئيسية" />
     <item
-        android:id="@+id/win"
+        android:id="@+id/nv_win"
         android:icon="@drawable/ic_win"
         android:title="البطولات" />
     <item
-        android:id="@+id/videos"
-        android:icon="@drawable/ic_vedios"
+        android:id="@+id/nv_videos"
+        android:icon="@drawable/ic_video"
         android:title="الفديوهات" />
     <item
-        android:id="@+id/more"
+        android:id="@+id/nv_more"
         android:icon="@drawable/ic_more"
         android:title="المزيد" />
 </menu>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.courses.details.CoursesDetailsFragment">
+
+        <RelativeLayout
+            android:id="@+id/layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_details"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_3"
+                android:transitionName="news_image"
+                app:riv_corner_radius_bottom_left="7dp"
+                app:riv_corner_radius_bottom_right="7dp" />
+
+            <ImageView
+                android:id="@+id/back_details"
+                android:layout_width="28.8dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layoutDirection="rtl"
+                android:src="@drawable/ic_left" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_image"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:fontFamily="@font/arabic_medium"
+            android:text="دورة المملكة الكبرى لتعليم  الجودو للشباب"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_course">
+
+            <RelativeLayout
+                android:id="@+id/details_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+
+                        android:layout_width="@dimen/_20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shap_oval_green">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_16dp"
+                                android:src="@drawable/ic_appointment" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="@string/course_date_start"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/course_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="04 ابريل 2020"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="@dimen/_20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shap_oval_green">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_16dp"
+                                android:src="@drawable/ic_kimono" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="@string/course_age"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/course_age"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="24-16 سنة"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_one"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+
+
+                        android:layout_width="@dimen/_20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shap_oval_green">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_16dp"
+                                android:src="@drawable/ic_clock_3" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="@string/course_duration"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/course_duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="شهرين"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shap_oval_green">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_16dp"
+                                android:src="@drawable/ic_save_money" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="@string/course_cost"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/course_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="500 ريال"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_two"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shap_oval_green">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_16dp"
+                                android:src="@drawable/ic_place_2" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="@string/comptetion_place"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/course_place"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/arabic_medium"
+                                android:text="نادي مكة الرياضي الأول - مكة -شارع المؤمن"
+                                android:textColor="@color/gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/line_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_8"
+                    android:layout_below="@+id/layout_lase"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:background="@color/white_gray" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line_one"
+                    android:layout_marginTop="@dimen/_16dp">
+
+
+                    <TextView
+                        android:id="@+id/connect_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:fontFamily="@font/arabic_semi_bold"
+                        android:text="@string/connect_us"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/connect_us_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/connect_us"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:fontFamily="@font/arabic_regular"
+                        android:text="@string/connect_us_from"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/icon_social"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_32"
+                        android:layout_below="@+id/connect_us_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <RelativeLayout
+                            android:layout_marginStart="40dp"
+                            android:layout_width="@dimen/_80"
+                            android:layout_height="@dimen/_80"
+                            android:layout_weight="1"
+                            android:background="@drawable/shap_oval_blue"
+                            android:layout_marginLeft="40dp">
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_twitter_8"/>
+
+                        </RelativeLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_marginEnd="@dimen/_32"
+                            android:layout_marginStart="@dimen/_32"
+                            android:layout_width="@dimen/_80"
+                            android:layout_height="@dimen/_80"
+                            android:layout_weight="1"
+                            android:background="@drawable/shap_oval_yellow">
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_snapchat"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_marginEnd="40dp"
+                            android:layout_width="@dimen/_80"
+                            android:layout_height="@dimen/_80"
+                            android:layout_weight="1"
+                            android:background="@drawable/shap_oval_green_"
+                            android:layout_marginRight="40dp">
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_margin="@dimen/_16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_whatsapp_5"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/or_"
+                        android:layout_marginTop="@dimen/_24"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/icon_social">
+
+
+                        <View
+                            android:layout_marginEnd="@dimen/_16dp"
+                            android:layout_marginTop="@dimen/_18"
+                            android:layout_marginStart="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="2dp"
+                            android:background="@color/white_gray"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="@dimen/_16dp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/or_"
+                            android:textSize="14sp"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/arabic_medium"
+                            android:layout_marginStart="@dimen/_8"
+                            android:layout_marginEnd="@dimen/_8"/>
+
+
+
+                        <View
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginTop="@dimen/_18"
+                            android:layout_marginEnd="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="2dp"
+                            android:background="@color/white_gray"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_marginBottom="@dimen/_40dp"
+                        android:paddingStart="120dp"
+                        android:paddingEnd="120dp"
+                        android:fontFamily="@font/arabic_regular"
+                        android:textSize="@dimen/_14sp"
+                        android:textColor="@color/white"
+                        android:text="@string/call"
+                        android:drawableStart="@drawable/ic_call"
+                        android:layout_marginTop="@dimen/_12dp"
+                        android:layout_marginStart="@dimen/_40dp"
+                        android:layout_marginEnd="@dimen/_40dp"
+                        android:layout_below="@+id/or_"
+                        android:background="@drawable/shap_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:drawableLeft="@drawable/ic_call" />
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</layout>
