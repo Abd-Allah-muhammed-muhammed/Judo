@@ -14,6 +14,7 @@ import android.view.View;
 import com.example.judo.R;
 
 import com.example.judo.databinding.ActivityHomBinding;
+import com.example.judo.ui.competitions.CompetitionsFragment;
 import com.example.judo.ui.more.MoreFragment;
 
 import com.example.judo.ui.vedios.VediosFragment;
@@ -76,6 +77,14 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
                 binding.smallLogo.setVisibility(View.INVISIBLE);
                 binding.tollbarTitle.setText("الفديوهات");
                 replace(VediosFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
+
+                break;
+
+            case R.id.nv_win :
+                binding.smallLogo.setVisibility(View.INVISIBLE);
+                binding.tollbarTitle.setText("البطولات");
+                replace(CompetitionsFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
+
 
                 break;
 
