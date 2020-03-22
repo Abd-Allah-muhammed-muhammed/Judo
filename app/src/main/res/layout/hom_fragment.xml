@@ -202,6 +202,7 @@
                             android:orientation="horizontal">
 
                             <RelativeLayout
+                                android:id="@+id/contact_us_layout"
                                 android:layout_width="0dp"
                                 android:layout_height="156dp"
                                 android:layout_marginStart="@dimen/_12dp"

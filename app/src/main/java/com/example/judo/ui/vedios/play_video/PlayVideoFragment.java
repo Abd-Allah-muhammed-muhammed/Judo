@@ -55,6 +55,8 @@ public class PlayVideoFragment extends Fragment {
         mViewModel = ViewModelProviders.of(this).get(PlayVideoViewModel.class);
 
 
+
+
         String video = getArguments().getString("video");
         binding.playVideo.setUp(video, JZVideoPlayer.SCROLL_AXIS_HORIZONTAL);
     }

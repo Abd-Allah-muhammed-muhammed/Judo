@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WrankingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_32"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_first" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_24"
+                    android:layout_marginEnd="@dimen/_24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabic_medium"
+                        android:text="@string/first"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabic_regular"
+                        android:text="@string/player_mohamed_mahmoud"
+                        android:textColor="#606060"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_32"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_second" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_24"
+                    android:layout_marginEnd="@dimen/_24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabic_medium"
+                        android:text="@string/the_second"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabic_regular"
+                        android:text="@string/player_mohamed_mahmoud"
+                        android:textColor="#606060"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_32"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_third" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_24"
+                    android:layout_marginEnd="@dimen/_24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabic_medium"
+                        android:text="@string/the_third"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabic_regular"
+                        android:text="@string/player_mohamed_mahmoud"
+                        android:textColor="#606060"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_8"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@color/white_gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/awards"
+            android:fontFamily="@font/arabic_semi_bold"
+            android:textSize="@dimen/_16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/award_details"
+            android:fontFamily="@font/arabic_regular"
+            android:textSize="@dimen/_16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"/>
+
+
+
+    </LinearLayout>
+
+</layout>

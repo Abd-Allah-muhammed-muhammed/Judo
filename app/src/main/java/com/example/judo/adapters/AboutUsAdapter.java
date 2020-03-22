@@ -15,6 +15,8 @@ import com.example.judo.R;
 import com.example.judo.databinding.ItemAboutUnionBinding;
 import com.example.judo.model.about_model.AboutUsModel;
 import com.example.judo.ui.about_us.know_union.KnowUnionFragment;
+import com.example.judo.ui.about_us.mangment.UnionMangmentFragment;
+import com.example.judo.ui.about_us.union_goals.UnionGoalsFragment;
 import com.example.judo.ui.about_us.union_message.UnionMessageFragment;
 
 import java.util.ArrayList;
@@ -56,6 +58,17 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.VH> {
                         openFragment(unionMessageFragment);
                         break;
 
+                    case 2 :
+
+                        openFragment(new UnionGoalsFragment());
+                        break;
+
+
+                    case 3 :
+
+                        openFragment(new UnionMangmentFragment());
+
+                        break;
                 }
             }
         });

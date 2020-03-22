@@ -2,14 +2,12 @@ package com.example.judo.adapters;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Build;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,10 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.judo.R;
 import com.example.judo.databinding.ItemCopetitionsBinding;
-import com.example.judo.databinding.ItemCoursesBinding;
 import com.example.judo.model.copmetitions.CompetitionModel;
-import com.example.judo.model.courses.CoursesModel;
-import com.example.judo.ui.courses.details.CoursesDetailsFragment;
+import com.example.judo.ui.competitions.details.CompetitionDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +67,9 @@ public class CompetitionsAdapter extends RecyclerView.Adapter<CompetitionsAdapte
             @Override
             public void onClick(View v) {
 
+
+                context.startActivity(new Intent(activity, CompetitionDetailsActivity.class));
+
             }
         });
 
@@ -100,15 +99,6 @@ public void setCompetitions(List<CompetitionModel> list){
 
 
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void openCoursesDetails(ImageView image) {
 
-//        ActivityOptionsCompat compat = null;
-//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-//            compat = ActivityOptionsCompat.makeSceneTransitionAnimation( activity,image, Objects.requireNonNull(ViewCompat.getTransitionName(image)));
-//        }
-
-//        replace(new NewsDetailsFragment(),R.id.news_container,((FragmentActivity)context).getSupportFragmentManager().beginTransaction(),"newsDetails");
-    }
 
 }

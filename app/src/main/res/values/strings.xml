@@ -1,18 +1,12 @@
 <resources>
     <string name="app_name">Judo</string>
-    <string name="mor">More</string>
-    <string name="new_"> News</string>
 
-    <string name="about_us">About Union</string>
     <string name="sections">Union Sections</string>
     <string name="mangment">Managements</string>
     <string name="trainers">Trainers</string>
     <string name="referee">Referee</string>
 
-    <string name="union_history">Union History</string>
-    <string name="union_achievements">Union Achievements</string>
-    <string name="what_distinguishes_the_union">What Distinguishes The Union</string>
-    <string name="what_is_our_message">What is our message?</string>
+
     <string name="players">Players</string>
     <string name="courses">Courses</string>
     <string name="course_date_start">Course Date Start</string>
@@ -24,9 +18,55 @@
     <string name="connect_us_from">You can Connect Us Through Our Official Account </string>
     <string name="or_">Or By </string>
     <string name="call">Call</string>
-    <string name="union_message">Union Message</string>
     <string name="know_union">Know The Union</string>
     <string name="our_motto">Our Motto</string>
+
+    <string name="union_mangment">The Founder Of The Union</string>
+
+
+
+    <string name="mor">More</string>
+    <string name="new_"> News</string>
+    <string name="about_us">About Union</string>
+    <string name="union_history">Union History</string>
+    <string name="union_achievements">Union Achievements</string>
+    <string name="what_distinguishes_the_union">What Distinguishes The Union</string>
+    <string name="what_is_our_message">What is our message?</string>
+    <string name="what_is_our_target">What is our target?</string>
+    <string name="Thanks_and_appreciation">Thanks and appreciation</string>
+    <string name="c_mohamed_bin_alla_el_kabeer">C.Mohamed bin Alla El-kabeer</string>
+    <string name="saudi_coach_for_judo">Saudi coach for judo</string>
+    <string name="for_all_contribute">For everyone who contributed to the development and construction of the union</string>
+    <string name="union_founders">Union founders</string>
+    <string name="union_message">Union message</string>
+    <string name="union_target">Union target</string>
+    <string name="send_to_us">Send to us</string>
+    <string name="send_us_a_message_in_any_time">Send us a message in any time</string>
+    <string name="full_name">Full name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="write_message">Write message</string>
+    <string name="send_message">send message</string>
+    <string name="our_adrress">Our adrress</string>
+    <string name="adrress_detail">Prince Faisal Bin Fahd Bin Abdulaziz Road, Al-Rafiah, Riyadh 12752, Saudi Arabia</string>
+    <string name="contact_with_us">Contact with us</string>
+    <string name="go_to_location_on_the_map">Go to location on the map</string>
+    <string name="our_accounts">Our accounts</string>
+    <string name="call_us">Call us</string>
+    <string name="calling">Calling</string>
+    <string name="first">First</string>
+    <string name="player_mohamed_mahmoud">Player: Mohamed Mahmoud</string>
+    <string name="the_second">The second</string>
+    <string name="the_third">The third</string>
+    <string name="awards">ِAwards</string>
+    <string name="award_details">Award details</string>
+    <string name="date">date</string>
+    <string name="age">Age</string>
+    <string name="the_place_of_the_tournament">The place of the tournament</string>
+    <string name="address">address</string>
+    <string name="other_details">Other details</string>
+    <string name="contact_us_by">Contact us by our official accounts</string>
+    <string name="or">Or</string>
+
 
 
 </resources>

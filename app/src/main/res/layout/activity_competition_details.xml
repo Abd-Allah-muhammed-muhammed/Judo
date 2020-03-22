@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+
+            android:background="@color/white"
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:fitsSystemWindows="true"
+            >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                app:title=""
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                >
+
+                    <ImageView
+                        android:id="@+id/image_"
+                        app:layout_collapseMode="parallax"
+                        android:src="@drawable/photo_3"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp" />
+
+
+                <ImageView
+                    android:id="@+id/back_about"
+                    android:layout_width="28dp"
+                    android:layout_height="@dimen/_24"
+                    android:layout_marginEnd="@dimen/_27"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:src="@drawable/ic_left"
+                    android:layout_marginRight="@dimen/_27"
+                    android:layout_marginLeft="@dimen/_16dp" />
+
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/toolbar"
+                android:background="@drawable/bg_toolpar_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/_16dp"
+
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:id="@+id/title"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arabic_medium"
+                    android:text="بطولة النخبة التعليمية الثالثه عشر"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+
+                <ImageView
+                    android:layout_below="@+id/title"
+                    android:id="@+id/icon_comp_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_win"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"/>
+
+                <TextView
+                    android:layout_below="@+id/title"
+                    android:id="@+id/tv_is_official"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/arabic_regular"
+                    android:layout_toEndOf="@+id/icon_comp_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="رسميه"
+                    android:layout_toRightOf="@+id/icon_comp_" />
+
+
+            </RelativeLayout>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <RelativeLayout
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabLayout
+                    app:tabTextColor="@color/gray"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    android:id="@+id/tab_competitions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <View
+                    android:id="@+id/lin_tap"
+                    android:layout_below="@+id/tab_competitions"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white_gray"/>
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_below="@+id/lin_tap"
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

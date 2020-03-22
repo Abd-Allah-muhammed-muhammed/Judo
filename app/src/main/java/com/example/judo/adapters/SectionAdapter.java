@@ -1,5 +1,6 @@
 package com.example.judo.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,21 +47,11 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.VH> {
         context = holder.itemView.getContext();
         SectionModel sectionModel = sectionModels.get(position);
         holder.binding.setSection(sectionModel);
-        holder.binding.layoutSection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-
-
-            }
-        });
 
     }
 
-    private void openFragment(Fragment fragment) {
-        replace(fragment, R.id.container_about_us, ((FragmentActivity) context).getSupportFragmentManager().beginTransaction(),"about us");
 
-    }
 
     @Override
     public int getItemCount() {
@@ -78,7 +69,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.VH> {
     }
 
 
-    public void setSectionModels (List<SectionModel>   sectionModels) {
+    public void setSectionModels (List<SectionModel>   sectionModels ) {
         this.sectionModels = sectionModels ;
         notifyDataSetChanged();
     }

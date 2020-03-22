@@ -21,6 +21,7 @@ import com.example.judo.adapters.HomeSliderAdapter;
 import com.example.judo.databinding.HomFragmentBinding;
 import com.example.judo.model.SliderModelHome;
 import com.example.judo.ui.about_us.AboutUsActivity;
+import com.example.judo.ui.contect_us.ContectUsActivity;
 import com.example.judo.ui.courses.CoursesActivity;
 import com.example.judo.ui.news.NewsActivity;
 import com.example.judo.ui.sections.SectionsActivity;
@@ -46,6 +47,7 @@ public class HomFragment extends Fragment implements View.OnClickListener {
         binding.layoutAboutUs.setOnClickListener(this);
         binding.layoutSections.setOnClickListener(this);
         binding.layoutCourses.setOnClickListener(this);
+        binding.contactUsLayout.setOnClickListener(this);
         return binding.getRoot();
     }
 
@@ -82,11 +84,22 @@ public class HomFragment extends Fragment implements View.OnClickListener {
 
             case R.id.layout_courses:
                 openCourses();
+                break;
+
+            case R.id.contact_us_layout :
+                openContactUs();
+                break;
         }
     }
 
+    private void openContactUs() {
 
-        private void getData () {
+        startActivity(new Intent(getContext(), ContectUsActivity.class));
+
+    }
+
+
+    private void getData () {
             List<SliderModelHome> listSlider = new ArrayList<>();
             listSlider.add(new SliderModelHome("https://wallpaperaccess.com/full/124582.jpg"
                     , "بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
