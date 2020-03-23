@@ -29,6 +29,13 @@ public class CompetitionDetailsActivity extends AppCompatActivity {
 
         binding.viewPager.setAdapter(new TapLayoutAdapter(getSupportFragmentManager()));
         binding.tabCompetitions.setupWithViewPager(binding.viewPager);
+        binding.backCompDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                onBackPressed();
+            }
+        });
 
 //
 //        for (int i = 0; i < binding.tabCompetitions.getTabCount(); i++) {

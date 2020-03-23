@@ -18,6 +18,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.judo.BuildConfig;
 import com.example.judo.R;
 import com.example.judo.databinding.ItemNewsBinding;
 import com.example.judo.model.news_item.NewsItemModel;
@@ -57,7 +58,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.VH>{
     public void onBindViewHolder(@NonNull final NewsAdapter.VH holder, int position) {
 
 
-        NewsItemModel newsItemModel = list.get(position);
+        final NewsItemModel newsItemModel = list.get(position);
         holder.binding.setNews(newsItemModel);
         Glide.with(holder.itemView).load(newsItemModel.getImage()).into(holder.binding.imageNews);
 
@@ -66,6 +67,19 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.VH>{
             @Override
             public void onClick(View v) {
                 openNewsDetails(holder.binding.imageNews);
+            }
+        });
+
+
+        holder.binding.icShareNews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        newsItemModel.getTitel());
+                sendIntent.setType("text/plain");
+                context.startActivity(sendIntent);
             }
         });
 
@@ -96,11 +110,6 @@ public void setNews(List<NewsItemModel> list){
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void openNewsDetails(ImageView image) {
-
-//        ActivityOptionsCompat compat = null;
-//        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-//            compat = ActivityOptionsCompat.makeSceneTransitionAnimation( activity,image, Objects.requireNonNull(ViewCompat.getTransitionName(image)));
-//        }
 
         replace(new NewsDetailsFragment(),R.id.news_container,((FragmentActivity)context).getSupportFragmentManager().beginTransaction(),"newsDetails");
     }

@@ -2,14 +2,18 @@ package com.example.judo.ui.hom;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.judo.R;
 
@@ -27,6 +31,7 @@ import static com.example.judo.helper.HelperMethods.replace;
 public class HomActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     ActivityHomBinding binding ;
+    private long backTime;
 
 
     @Override
@@ -38,19 +43,16 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
         setSupportActionBar(binding.toolbar);
 
         binding.navigation.setOnNavigationItemSelectedListener(this);
+        binding.navigation.setItemIconTintList(null);
 
 
 
 
-    }
-
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
 
     }
+
+
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -68,7 +70,6 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
             case R.id._nv_home :
                 binding.smallLogo.setVisibility(View.VISIBLE);
                 binding.tollbarTitle.setText("الاتحاد السعودي للجودو");
-
                 replace(HomFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"home_fragment");
 
                 break;
@@ -76,11 +77,13 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
             case  R.id.nv_videos:
                 binding.smallLogo.setVisibility(View.INVISIBLE);
                 binding.tollbarTitle.setText("الفديوهات");
+
                 replace(VediosFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
 
                 break;
 
             case R.id.nv_win :
+
                 binding.smallLogo.setVisibility(View.INVISIBLE);
                 binding.tollbarTitle.setText("البطولات");
                 replace(CompetitionsFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
@@ -94,9 +97,26 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
 
 
 
-        return false;
+        return true;
     }
 
 
+    @Override
+    public void onBackPressed() {
+        if (backTime + 3000 >System.currentTimeMillis()){
+            
+            Intent a = new Intent(Intent.ACTION_MAIN);
+            a.addCategory(Intent.CATEGORY_HOME);
+            a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(a);
+        }else {
 
+            Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+        }
+        backTime = System.currentTimeMillis();
+
+
+       
+
+    }
 }

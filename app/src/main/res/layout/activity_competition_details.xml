@@ -39,7 +39,7 @@
 
 
                 <ImageView
-                    android:id="@+id/back_about"
+                    android:id="@+id/back_comp_details"
                     android:layout_width="28dp"
                     android:layout_height="@dimen/_24"
                     android:layout_marginEnd="@dimen/_27"

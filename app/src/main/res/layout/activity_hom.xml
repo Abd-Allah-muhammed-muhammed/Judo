@@ -59,19 +59,16 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_56dp"
-            android:layout_alignParentBottom="true"
+
             android:background="@color/white"
-            android:layoutDirection="rtl"
-            app:elevation="20dp"
-            app:itemIconTint="@drawable/bottom_navigation_colors"
-            app:itemTextColor="@drawable/bottom_navigation_colors"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/nav_menu"
-            tools:targetApi="jelly_bean_mr1" />
-
+            app:itemTextColor="@color/gray"
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </RelativeLayout>
 
 </layout>

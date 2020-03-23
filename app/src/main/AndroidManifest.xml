@@ -12,17 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.competitions.details.CompetitionDetailsActivity">
-
-
-
-
-        </activity>
+        <activity android:name=".ui.competitions.details.photos.show_photos.ShowPhotoActivity"></activity>
+        <activity android:name=".ui.competitions.details.CompetitionDetailsActivity"></activity>
         <activity android:name=".ui.courses.CoursesActivity" />
         <activity android:name=".ui.sections.SectionsActivity" />
         <activity android:name=".ui.about_us.AboutUsActivity" />
         <activity android:name=".ui.news.NewsActivity" />
-        <activity android:name=".ui.hom.HomActivity" />
+        <activity android:name=".ui.hom.HomActivity" ></activity>
         <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,9 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.contect_us.ContectUsActivity"/>
-
+        <activity android:name=".ui.contect_us.ContectUsActivity" />
     </application>
 
 </manifest>

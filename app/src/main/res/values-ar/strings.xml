@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Judo</string>
     <string name="mor">المزيد</string>
->
+    >
     <string name="sections">اقسام الاتحاد</string>
     <string name="mangment">اداريين</string>
     <string name="trainers">مدربين</string>
@@ -24,49 +24,46 @@
 
 
 
-
-
-        <string name="new_">الاحدث</string>
-        <string name="about_us">عن الاتحاد</string>
-        <string name="union_history">تاريخ الاتحاد</string>
-        <string name="union_achievements">إنجازات الاتحاد</string>
-        <string name="what_distinguishes_the_union">ما يميز الاتحاد</string>
-        <string name="what_is_our_message">ماهي رسالتنا؟</string>
-        <string name="what_is_our_target">ماهي أهدافنا؟</string>
-        <string name="Thanks_and_appreciation">شكر وتقدير</string>
-        <string name="for_all_contribute">لكل من ساهم في تطوير وبناء الاتحاد</string>
-        <string name="c_mohamed_bin_alla_el_kabeer">ك/ محمد بن علاء الكبير</string>
-        <string name="saudi_coach_for_judo">مدرب السعودية للجودو</string>
-        <string name="union_founders">مؤسسين الاتحاد</string>
-        <string name="union_message">رسالة الاتحاد</string>
-        <string name="union_target">أهداف الاتحاد</string>
-        <string name="send_to_us">راسلنا</string>
-        <string name="send_us_a_message_in_any_time">ارسل لنا رسالة في اي وقت</string>
-        <string name="full_name">الاسم بالكامل</string>
-        <string name="phone_number">رقم الهاتف</string>
-        <string name="write_message">اكتب رسالة</string>
-        <string name="send_message">ارسل رسالة</string>
-        <string name="our_adrress">عنواننا</string>
-        <string name="adrress_detail">طريق الأمير فيصل بن فهد بن عبدالعزيز، الرفيعة، الرياض 12752، المملكة العربية السعودية</string>
-        <string name="contact_with_us">تواصل معنا</string>
-        <string name="go_to_location_on_the_map">الذهاب للموقع علي الخريطة</string>
-        <string name="our_accounts">حساباتنا</string>
-        <string name="call_us">اتصل بنا</string>
-        <string name="calling">الاتصال</string>
-        <string name="first">First</string>
-        <string name="player_mohamed_mahmoud">اللاعب: محمد محمود</string>
-        <string name="the_second">المركز التاني</string>
-        <string name="the_third">المركز الثالث</string>
-        <string name="awards">الجوائز</string>
-        <string name="award_details">يتم هنا كتابة تفاصيل عن جوائز الاعبين مثل حصل المركز الأول على كأس لامع يلمع في الشمس وبراق و المكز الثاني على كأس غير لا مع و المركز الثالث على لاشيء</string>
-        <string name="date">التاريخ</string>
-        <string name="age">السن</string>
-        <string name="the_place_of_the_tournament">مكان البطولة</string>
-        <string name="address">نادي مكة الرياضي الأول - مكة -شارع المؤمن</string>
-        <string name="other_details">تفاصيل أخري</string>
-        <string name="contact_us_by">يمكنك التواصل معنا من خلال حسابتنا الرسمية</string>
-        <string name="or">أو عن طريق</string>
-
+    <string name="new_">الاحدث</string>
+    <string name="about_us">عن الاتحاد</string>
+    <string name="union_history">تاريخ الاتحاد</string>
+    <string name="union_achievements">إنجازات الاتحاد</string>
+    <string name="what_distinguishes_the_union">ما يميز الاتحاد</string>
+    <string name="what_is_our_message">ماهي رسالتنا؟</string>
+    <string name="what_is_our_target">ماهي أهدافنا؟</string>
+    <string name="Thanks_and_appreciation">شكر وتقدير</string>
+    <string name="for_all_contribute">لكل من ساهم في تطوير وبناء الاتحاد</string>
+    <string name="c_mohamed_bin_alla_el_kabeer">ك/ محمد بن علاء الكبير</string>
+    <string name="saudi_coach_for_judo">مدرب السعودية للجودو</string>
+    <string name="union_founders">مؤسسين الاتحاد</string>
+    <string name="union_message">رسالة الاتحاد</string>
+    <string name="union_target">أهداف الاتحاد</string>
+    <string name="send_to_us">راسلنا</string>
+    <string name="send_us_a_message_in_any_time">ارسل لنا رسالة في اي وقت</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="write_message">اكتب رسالة</string>
+    <string name="send_message">ارسل رسالة</string>
+    <string name="our_adrress">عنواننا</string>
+    <string name="adrress_detail">طريق الأمير فيصل بن فهد بن عبدالعزيز، الرفيعة، الرياض 12752، المملكة العربية السعودية</string>
+    <string name="contact_with_us">تواصل معنا</string>
+    <string name="go_to_location_on_the_map">الذهاب للموقع علي الخريطة</string>
+    <string name="our_accounts">حساباتنا</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="calling">الاتصال</string>
+    <string name="first">First</string>
+    <string name="player_mohamed_mahmoud">اللاعب: محمد محمود</string>
+    <string name="the_second">المركز التاني</string>
+    <string name="the_third">المركز الثالث</string>
+    <string name="awards">الجوائز</string>
+    <string name="award_details">يتم هنا كتابة تفاصيل عن جوائز الاعبين مثل حصل المركز الأول على كأس لامع يلمع في الشمس وبراق و المكز الثاني على كأس غير لا مع و المركز الثالث على لاشيء</string>
+    <string name="date">التاريخ</string>
+    <string name="age">السن</string>
+    <string name="the_place_of_the_tournament">مكان البطولة</string>
+    <string name="address">نادي مكة الرياضي الأول - مكة -شارع المؤمن</string>
+    <string name="other_details">تفاصيل أخري</string>
+    <string name="contact_us_by">يمكنك التواصل معنا من خلال حسابتنا الرسمية</string>
+    <string name="or">أو عن طريق</string>
 
 
 
