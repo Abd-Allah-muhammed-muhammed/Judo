@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import com.example.judo.R;
 import com.example.judo.databinding.CoursesDetailsFragmentBinding;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class CoursesDetailsFragment extends Fragment {
 
     private CoursesDetailsViewModel mViewModel;
@@ -29,6 +31,10 @@ public class CoursesDetailsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.courses_details_fragment, container, false);
+        if (isEnglish()){
+
+            binding.backDetails.setImageResource(R.drawable.ic_right_white);
+        }
         binding.backDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

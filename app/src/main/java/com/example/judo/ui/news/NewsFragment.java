@@ -22,6 +22,8 @@ import com.example.judo.model.news_item.NewsItemModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class NewsFragment extends Fragment implements View.OnClickListener {
 
     private NewsViewModel mViewModel;
@@ -37,6 +39,11 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
                              @Nullable Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.news_fragment, container, false);
+
+        if (isEnglish()){
+
+            binding.back.setImageResource(R.drawable.ic_right_white);
+        }
         newsAdapter = new NewsAdapter(getActivity());
         binding.rvNews.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.rvNews.setAdapter(newsAdapter);
@@ -48,7 +55,7 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(NewsViewModel.class);
-        mViewModel.getNews().observe(getViewLifecycleOwner(), new Observer<List<NewsItemModel>>() {
+        mViewModel.getNews(getActivity()).observe(getViewLifecycleOwner(), new Observer<List<NewsItemModel>>() {
             @Override
             public void onChanged(List<NewsItemModel> newsItemModels) {
 

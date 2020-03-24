@@ -43,7 +43,7 @@ public class CompetitionsFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(ComptitionsViewModel.class);
-        mViewModel.getData().observe(getViewLifecycleOwner(), new Observer<List<CompetitionModel>>() {
+        mViewModel.getData(getActivity()).observe(getViewLifecycleOwner(), new Observer<List<CompetitionModel>>() {
             @Override
             public void onChanged(List<CompetitionModel> competitionModels) {
 

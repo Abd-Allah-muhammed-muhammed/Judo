@@ -21,6 +21,7 @@ import com.example.judo.ui.competitions.details.CompetitionDetailsActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
 import static com.example.judo.helper.HelperMethods.replace;
 
 
@@ -48,19 +49,32 @@ public class CompetitionsAdapter extends RecyclerView.Adapter<CompetitionsAdapte
 
     @Override
     public void onBindViewHolder(@NonNull final CompetitionsAdapter.VH holder, int position) {
-
-
         CompetitionModel competitionModel = list.get(position);
+
+        if (isEnglish()){
+            if (competitionModel.isOfficial()){
+
+                holder.binding.isOfficial.setImageResource(R.drawable.tag_english);
+            }else {
+                holder.binding.isOfficial.setImageResource(R.drawable.tag2_english);
+
+
+            }
+
+        }else {
+            if (competitionModel.isOfficial()){
+
+                holder.binding.isOfficial.setImageResource(R.drawable.tag);
+            }else {
+                holder.binding.isOfficial.setImageResource(R.drawable.tag2);
+
+
+            }
+        }
+
         holder.binding.setCompetitions(competitionModel);
 
-        if (competitionModel.isOfficial()){
 
-            holder.binding.isOfficial.setImageResource(R.drawable.tag);
-        }else {
-            holder.binding.isOfficial.setImageResource(R.drawable.tag2);
-
-
-        }
 
         Glide.with(context).load(competitionModel.getImage()).into(holder.binding.topicImage);
         holder.binding.competitionCard.setOnClickListener(new View.OnClickListener() {

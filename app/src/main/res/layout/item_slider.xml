@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/_8"
-        android:text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"
+        android:text="@string/test_titel_comp"
         />
 
 

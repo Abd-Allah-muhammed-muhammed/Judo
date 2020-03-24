@@ -23,6 +23,8 @@ import com.example.judo.model.sections.SectionsInputModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class SectionsFragment extends Fragment {
 
     private SectionsViewModel mViewModel;
@@ -37,6 +39,12 @@ public class SectionsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.sections_fragment, container, false);
+
+        if (isEnglish()){
+
+            binding.backSections.setImageResource(R.drawable.ic_right_white);
+        }
+
         binding.setLifecycleOwner(getViewLifecycleOwner());
         binding.backSections.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +60,7 @@ public class SectionsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(SectionsViewModel.class);
         binding.setLifecycleOwner(this);
-        mViewModel.getDataSections().observe(getViewLifecycleOwner(), new Observer<List<SectionsInputModel>>() {
+        mViewModel.getDataSections(getActivity()).observe(getViewLifecycleOwner(), new Observer<List<SectionsInputModel>>() {
             @Override
             public void onChanged(List<SectionsInputModel> sectionsInputModels) {
                 adapter = new SectionsAdapter();

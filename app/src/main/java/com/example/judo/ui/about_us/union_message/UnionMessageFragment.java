@@ -16,6 +16,8 @@ import android.view.ViewGroup;
 import com.example.judo.R;
 import com.example.judo.databinding.UnionMessageFragmentBinding;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class UnionMessageFragment extends Fragment {
 
     private UnionMessageViewModel mViewModel;
@@ -30,6 +32,11 @@ public class UnionMessageFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.union_message_fragment, container, false);
+        if (isEnglish()){
+
+
+            binding.backAbout.setImageResource(R.drawable.ic_right_black);
+        }
         binding.backAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -22,6 +22,8 @@ import com.example.judo.model.about_model.AboutUsModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class AboutUsFragment extends Fragment implements View.OnClickListener {
 
     private AboutUsViewModel mViewModel;
@@ -37,6 +39,13 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.about_us_fragment, container, false);
+        binding.backAbout.setOnClickListener(this);
+
+        if (isEnglish()){
+
+
+            binding.backAbout.setImageResource(R.drawable.ic_right_white);
+        }
 
         return binding.getRoot();
     }
@@ -46,8 +55,7 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(AboutUsViewModel.class);
 
-        binding.backAbout.setOnClickListener(this);
-       mViewModel.getDataAbout().observe(getViewLifecycleOwner(), new Observer<List<AboutUsModel>>() {
+       mViewModel.getDataAbout(getActivity()).observe(getViewLifecycleOwner(), new Observer<List<AboutUsModel>>() {
            @Override
            public void onChanged(List<AboutUsModel> aboutUsModels) {
 

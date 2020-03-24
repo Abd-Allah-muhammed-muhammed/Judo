@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/arabic_regular"
-                    android:text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات للدرجة الأولى بمكة"
+                    android:text="@string/our_target_msg"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 

@@ -51,7 +51,7 @@
             android:id="@+id/new_courses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="أحدث الدورات"
+            android:text="@string/new_courses"
             android:layout_below="@+id/toolbar"
             android:layout_marginTop="@dimen/_20dp"
             android:layout_marginEnd="@dimen/_16dp"

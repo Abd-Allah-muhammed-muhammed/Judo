@@ -26,6 +26,7 @@ import com.example.judo.ui.sections.trainers.TrainersFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
 import static com.example.judo.helper.HelperMethods.replace;
 
 public class SectionsAdapter extends RecyclerView.Adapter<SectionsAdapter.VH> {
@@ -44,6 +45,13 @@ public class SectionsAdapter extends RecyclerView.Adapter<SectionsAdapter.VH> {
 
     @Override
     public void onBindViewHolder(@NonNull SectionsAdapter.VH holder, final int position) {
+
+        if (isEnglish()){
+
+
+            holder.binding.icArrowSection.setImageResource(R.drawable.ic_arrow_right);
+
+        }
 
         context = holder.itemView.getContext();
         SectionsInputModel sectionsInputModel = sectionsInputModels.get(position);

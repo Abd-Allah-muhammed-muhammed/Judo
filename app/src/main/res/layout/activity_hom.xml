@@ -42,7 +42,7 @@
                     android:layout_toRightOf="@+id/small_logo"
                     android:fontFamily="@font/arabic_semi_bold"
                     android:gravity="center_vertical"
-                    android:text="الاتحاد السعودي للجودو"
+                    android:text="@string/gudo_union"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 

@@ -9,6 +9,8 @@ import android.view.WindowManager;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import java.util.Locale;
+
 public final class HelperMethods {
 
 
@@ -40,5 +42,20 @@ public final class HelperMethods {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
+    public static boolean isEnglish(){
+
+        String lang = Locale.getDefault().getLanguage();
+
+        if (lang.equals("en")){
+            return true;
+
+        }else {
+
+            return false;
+        }
+
+
     }
 }

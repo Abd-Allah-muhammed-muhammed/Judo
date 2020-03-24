@@ -12,9 +12,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.judo.R;
 import com.example.judo.databinding.KnowUnionFragmentBinding;
+
+import java.util.Locale;
+
+import static com.example.judo.helper.HelperMethods.isEnglish;
 
 public class KnowUnionFragment extends Fragment {
 
@@ -35,6 +40,13 @@ public class KnowUnionFragment extends Fragment {
                 getActivity().onBackPressed();
             }
         });
+
+
+        if (isEnglish()){
+
+            binding.backAbout.setImageResource(R.drawable.ic_right_black);
+
+        }
         return binding.getRoot();
     }
 

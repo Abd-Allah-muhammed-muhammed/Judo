@@ -15,6 +15,8 @@ import com.example.judo.adapters.TapLayoutAdapter;
 import com.example.judo.databinding.ActivityCompetitionDetailsBinding;
 import com.google.android.material.tabs.TabLayout;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class CompetitionDetailsActivity extends AppCompatActivity {
 
     private ActivityCompetitionDetailsBinding binding ;
@@ -25,9 +27,14 @@ public class CompetitionDetailsActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_competition_details);
 
 
+        if (isEnglish()){
 
 
-        binding.viewPager.setAdapter(new TapLayoutAdapter(getSupportFragmentManager()));
+            binding.backCompDetails.setImageResource(R.drawable.ic_right_white);
+        }
+
+
+        binding.viewPager.setAdapter(new TapLayoutAdapter(getSupportFragmentManager(),this));
         binding.tabCompetitions.setupWithViewPager(binding.viewPager);
         binding.backCompDetails.setOnClickListener(new View.OnClickListener() {
             @Override

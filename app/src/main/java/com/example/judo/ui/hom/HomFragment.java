@@ -102,14 +102,14 @@ public class HomFragment extends Fragment implements View.OnClickListener {
     private void getData () {
             List<SliderModelHome> listSlider = new ArrayList<>();
             listSlider.add(new SliderModelHome("https://wallpaperaccess.com/full/124582.jpg"
-                    , "بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
+                    , getString(R.string.test_titel_comp)));
 
 
             listSlider.add(new SliderModelHome("https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg"
-                    , "بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
+                    , getString(R.string.test_titel_comp)));
 
             listSlider.add(new SliderModelHome("https://www.robin-noorda.com/uploads/1/6/8/3/16830688/3347022_orig.jpg"
-                    , "بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"));
+                    , getString(R.string.test_titel_comp)));
 
             sliderAdapter.setList(listSlider);
 

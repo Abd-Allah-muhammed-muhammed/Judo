@@ -1,11 +1,14 @@
 package com.example.judo.adapters;
 
 
+import android.app.Activity;
+
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.judo.R;
 import com.example.judo.ui.competitions.details.CompetitionInformationFragment;
 import com.example.judo.ui.competitions.details.mangment.MangmentCompetitionFragment;
 import com.example.judo.ui.competitions.details.photos.CompetitionPhotosFragment;
@@ -14,8 +17,11 @@ import com.example.judo.ui.competitions.details.rank.CompetitionRanksFragment;
 
 public class TapLayoutAdapter extends FragmentPagerAdapter {
 
-    public TapLayoutAdapter(FragmentManager fm) {
+
+    Activity activity ;
+    public TapLayoutAdapter(FragmentManager fm , Activity activity) {
         super(fm);
+       this.activity = activity;
     }
 
     @Override
@@ -44,15 +50,15 @@ public class TapLayoutAdapter extends FragmentPagerAdapter {
 
         switch (position){
             case 0:
-                return "المعلومات"  ;
+                return activity.getString(R.string.informations)  ;
             case 1:
-                return "المراكز";
+                return activity.getString(R.string.rank);
             case 2 :
-                return "الصور";
+                return activity.getString(R.string.photos);
 
             case 3 :
 
-                return "المنظمون";
+                return activity.getString(R.string.mangers);
         }
         return super.getPageTitle(position);
     }

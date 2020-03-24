@@ -51,7 +51,7 @@
     <string name="our_accounts">حساباتنا</string>
     <string name="call_us">اتصل بنا</string>
     <string name="calling">الاتصال</string>
-    <string name="first">First</string>
+    <string name="first">المركز الاول</string>
     <string name="player_mohamed_mahmoud">اللاعب: محمد محمود</string>
     <string name="the_second">المركز التاني</string>
     <string name="the_third">المركز الثالث</string>
@@ -64,7 +64,34 @@
     <string name="other_details">تفاصيل أخري</string>
     <string name="contact_us_by">يمكنك التواصل معنا من خلال حسابتنا الرسمية</string>
     <string name="or">أو عن طريق</string>
-
+    <string name="gudo_union">الاتحاد السعودي للجودو</string>
+    <string name="win">البطولات</string>
+    <string name="Hom">الرئيسية</string>
+    <string name="videos">الفديوهات</string>
+    <string name="last_championships">آخر البطولات المقامة</string>
+    <string name="new_courses">أحدث الدورات</string>
+    <string name="our_target_msg">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات للدرجة الأولى بمكة</string>
+    <string name="official">رسميه</string>
+    <string name="test_titel_comp">بطولة النخبة التعليمية الثالثه عشر</string>
+    <string name="test_titel_course">دورة المملكة الكبرى لتعليم الجودو للشباب</string>
+    <string name="test_desc">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان</string>
+    <string name="last_news">اخر الاخبار</string>
+    <string name="union_section">اقسام الاتحاد</string>
+    <string name="section">الاقسام</string>
+    <string name="about_app">عن التطبيق</string>
+    <string name="msg_app">تطبيق الاتحاد السعودي للجودي هو التطبيق الرسمي لرياضة الجودو بالسعودية يتيح للمستخدم كل المعلومات عن الاتحاد والأخبار الجديدة كذلك البطولات والدورات وغيرها من المزايا</string>
+    <string name="our_moto">شعارنا نصنع أبطال من الصغار للكبار</string>
+    <string name="help_us_withe">ساعدنا باقتراحك لنستمر بالتطوير</string>
+    <string name="hint_write_msg">اكتب رسالتك أو اقتراحك هنا</string>
+    <string name="send_now">ارسل الان</string>
+    <string name="share_the_app">مشاركة التطبيق</string>
+    <string name="rate_the_app">تقييم التطبيق</string>
+    <string name="rescent">الأحدث</string>
+    <string name="informations">المعلومات</string>
+    <string name="photos">الصور</string>
+    <string name="rank">المراكز</string>
+    <string name="mangers">المنظمون</string>
+    <string name="press_again">من فضلك اضغط مره اخري للخروج</string>
 
 
 </resources>

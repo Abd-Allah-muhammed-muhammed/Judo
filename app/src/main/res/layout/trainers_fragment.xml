@@ -47,7 +47,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="شكر وتقدير"
+            android:text="@string/Thanks_and_appreciation"
             android:id="@+id/thanks"
             android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/toolbar"
@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="لكل من ساهم في تطوير وبناء الاتحاد"
+            android:text="@string/for_all_contribute"
             android:id="@+id/for_all"
             android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/thanks"

@@ -17,6 +17,7 @@ import com.example.judo.databinding.FragmentNewsDetailsBinding;
 import com.example.judo.databinding.NewsFragmentBinding;
 
 import static com.example.judo.helper.HelperMethods.fullScreen;
+import static com.example.judo.helper.HelperMethods.isEnglish;
 
 public class NewsDetailsFragment extends Fragment implements View.OnClickListener {
 
@@ -28,6 +29,10 @@ public class NewsDetailsFragment extends Fragment implements View.OnClickListene
                              Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_news_details, container, false);
+
+        if (isEnglish()){
+            binding.backDetails.setImageResource(R.drawable.ic_right_white);
+        }
         Glide.with(getContext()).load(test).into( binding.imgDetails);
 
         binding.backDetails.setOnClickListener(this);

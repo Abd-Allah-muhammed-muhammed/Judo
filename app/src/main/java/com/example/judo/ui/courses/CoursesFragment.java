@@ -24,6 +24,8 @@ import com.example.judo.ui.hom.HomActivity;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class CoursesFragment extends Fragment {
 
     private CoursesViewModel mViewModel;
@@ -40,6 +42,11 @@ public class CoursesFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.courses_fragment, container, false);
+
+        if (isEnglish()){
+
+            binding.backCourses.setImageResource(R.drawable.ic_right_white);
+        }
         binding.setLifecycleOwner(getViewLifecycleOwner());
         binding.backCourses.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +64,7 @@ public class CoursesFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(CoursesViewModel.class);
 
-        mViewModel.getData().observe(getViewLifecycleOwner(), new Observer<List<CoursesModel>>() {
+        mViewModel.getData(getActivity()).observe(getViewLifecycleOwner(), new Observer<List<CoursesModel>>() {
             @Override
             public void onChanged(List<CoursesModel> coursesModels) {
                 adapter = new CoursesAdapter(getActivity());

@@ -45,7 +45,7 @@ public class VediosFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(VediosViewModel.class);
-        mViewModel.getData().observe(getViewLifecycleOwner(), new Observer<List<VideosModel>>() {
+        mViewModel.getData(getActivity()).observe(getViewLifecycleOwner(), new Observer<List<VideosModel>>() {
             @Override
             public void onChanged(List<VideosModel> videosModels) {
 

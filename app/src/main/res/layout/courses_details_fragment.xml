@@ -31,7 +31,6 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="@dimen/_16dp"
-                android:layoutDirection="rtl"
                 android:src="@drawable/ic_left" />
 
 
@@ -47,7 +46,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="@dimen/_16dp"
             android:fontFamily="@font/arabic_medium"
-            android:text="دورة المملكة الكبرى لتعليم  الجودو للشباب"
+            android:text="@string/test_titel_course"
             android:textColor="@color/black"
             android:textSize="20sp" />
 

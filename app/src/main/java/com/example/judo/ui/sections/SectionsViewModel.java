@@ -1,5 +1,7 @@
 package com.example.judo.ui.sections;
 
+import android.app.Activity;
+
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -13,17 +15,17 @@ import java.util.List;
 public class SectionsViewModel extends ViewModel {
 
 
-    public MutableLiveData<List<SectionsInputModel>> getDataSections(){
+    public MutableLiveData<List<SectionsInputModel>> getDataSections(Activity activity){
 
 
         MutableLiveData<List<SectionsInputModel>> data = new MutableLiveData<>();
 
         List<SectionsInputModel>  sectionsInputModels = new ArrayList<>();
 
-        sectionsInputModels.add(new SectionsInputModel(R.drawable.setting,"اداريين"));
-        sectionsInputModels.add(new SectionsInputModel(R.drawable.men,"لاعبين"));
-        sectionsInputModels.add(new SectionsInputModel(R.drawable.manger,"مدربين"));
-        sectionsInputModels.add(new SectionsInputModel(R.drawable.men,"حكام"));
+        sectionsInputModels.add(new SectionsInputModel(R.drawable.setting,activity.getString(R.string.mangment)));
+        sectionsInputModels.add(new SectionsInputModel(R.drawable.men,activity.getString(R.string.players)));
+        sectionsInputModels.add(new SectionsInputModel(R.drawable.manger,activity.getString(R.string.trainers)));
+        sectionsInputModels.add(new SectionsInputModel(R.drawable.men,activity.getString(R.string.referee)));
 
         data.setValue(sectionsInputModels);
 

@@ -40,7 +40,7 @@
                 android:layout_toEndOf="@+id/back"
                 android:layout_toRightOf="@+id/back"
                 android:fontFamily="@font/arabic_semi_bold"
-                android:text="أخر الاخبار"
+                android:text="@string/last_news"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 

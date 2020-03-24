@@ -22,6 +22,8 @@ import com.example.judo.model.sections.SectionModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class UnionMangmentFragment extends Fragment {
 
     private UnionMangmentViewModel mViewModel;
@@ -38,9 +40,14 @@ public class UnionMangmentFragment extends Fragment {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.union_mangment_fragment,container,false);
 
+        if (isEnglish()){
+
+            binding.backFounders.setImageResource(R.drawable.ic_right_black);
+        }
         binding.backFounders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 getActivity().onBackPressed();
             }

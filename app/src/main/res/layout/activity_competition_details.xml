@@ -73,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/arabic_medium"
-                    android:text="بطولة النخبة التعليمية الثالثه عشر"
+                    android:text="@string/test_titel_comp"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -98,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_16dp"
-                    android:text="رسميه"
+                    android:text="@string/official"
                     android:layout_toRightOf="@+id/icon_comp_" />
 
 

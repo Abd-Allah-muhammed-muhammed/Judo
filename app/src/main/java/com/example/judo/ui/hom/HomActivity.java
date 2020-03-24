@@ -61,7 +61,7 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
 
             case R.id.nv_more:
                 binding.smallLogo.setVisibility(View.INVISIBLE);
-                binding.tollbarTitle.setText("المزيد");
+                binding.tollbarTitle.setText(getString(R.string.mor));
 
                 replace(MoreFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"more");
                 break;
@@ -69,14 +69,14 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
 
             case R.id._nv_home :
                 binding.smallLogo.setVisibility(View.VISIBLE);
-                binding.tollbarTitle.setText("الاتحاد السعودي للجودو");
+                binding.tollbarTitle.setText(getString(R.string.gudo_union));
                 replace(HomFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"home_fragment");
 
                 break;
 
             case  R.id.nv_videos:
                 binding.smallLogo.setVisibility(View.INVISIBLE);
-                binding.tollbarTitle.setText("الفديوهات");
+                binding.tollbarTitle.setText(getString(R.string.videos));
 
                 replace(VediosFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
 
@@ -85,7 +85,7 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
             case R.id.nv_win :
 
                 binding.smallLogo.setVisibility(View.INVISIBLE);
-                binding.tollbarTitle.setText("البطولات");
+                binding.tollbarTitle.setText(getString(R.string.win));
                 replace(CompetitionsFragment.newInstance(),R.id.hom_container,getSupportFragmentManager().beginTransaction(),"videos_fragment");
 
 
@@ -111,7 +111,7 @@ public class HomActivity extends AppCompatActivity  implements BottomNavigationV
             startActivity(a);
         }else {
 
-            Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.press_again, Toast.LENGTH_SHORT).show();
         }
         backTime = System.currentTimeMillis();
 

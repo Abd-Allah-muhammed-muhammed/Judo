@@ -22,6 +22,8 @@ import com.example.judo.model.sections.SectionModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class RefereeFragment extends Fragment {
 
     private RefereeViewModel mViewModel;
@@ -37,6 +39,12 @@ public class RefereeFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.referee_fragment,container,false);
+
+        if (isEnglish()){
+
+            binding.backReferee.setImageResource(R.drawable.ic_right_white);
+        }
+
         binding.setLifecycleOwner(getViewLifecycleOwner());
         binding.backReferee.setOnClickListener(new View.OnClickListener() {
             @Override

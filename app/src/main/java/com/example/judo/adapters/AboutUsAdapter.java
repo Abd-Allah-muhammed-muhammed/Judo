@@ -22,6 +22,7 @@ import com.example.judo.ui.about_us.union_message.UnionMessageFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
 import static com.example.judo.helper.HelperMethods.replace;
 
 public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.VH> {
@@ -41,6 +42,13 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.VH> {
     @Override
     public void onBindViewHolder(@NonNull AboutUsAdapter.VH holder, final int position) {
 
+        if (isEnglish()){
+
+
+            holder.binding.layoutAboutUs.setBackgroundResource(R.drawable.bg_about_left);
+            holder.binding.icArrowAbout.setImageResource(R.drawable.ic_arrow_right);
+
+        }
         context = holder.itemView.getContext();
         AboutUsModel aboutUsModel = aboutUsModels.get(position);
         holder.binding.setAbout(aboutUsModel);

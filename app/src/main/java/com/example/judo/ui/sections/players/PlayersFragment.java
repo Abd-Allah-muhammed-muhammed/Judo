@@ -23,6 +23,8 @@ import com.example.judo.model.sections.SectionModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class PlayersFragment extends Fragment {
 
     private PlayersViewModel mViewModel;
@@ -38,6 +40,12 @@ public class PlayersFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.players_fragment,container,false);
+
+        if (isEnglish()){
+
+            binding.backPlayers.setImageResource(R.drawable.ic_right_white);
+        }
+
         binding.setLifecycleOwner(getViewLifecycleOwner());
         binding.backPlayers.setOnClickListener(new View.OnClickListener() {
             @Override

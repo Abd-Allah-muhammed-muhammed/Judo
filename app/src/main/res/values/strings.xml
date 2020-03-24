@@ -63,7 +63,35 @@
     <string name="other_details">Other details</string>
     <string name="contact_us_by">Contact us by our official accounts</string>
     <string name="or">Or by</string>
-
+    <string name="gudo_union">Judo Saudi Union</string>
+    <string name="Hom">Home</string>
+    <string name="win">Championships</string>
+    <string name="videos">Videos</string>
+    <string name="last_championships">The last Championships</string>
+    <string name="new_courses">The new courses</string>
+    <string name="our_target_msg">Kingdom Championship for clubs, authorities and universities for the first degree in Mecca and the surprise of Safan</string>
+    <string name="test_titel_comp">The thirteenth educational elite championship</string>
+    <string name="official">Official</string>
+    <string name="test_titel_course">Great Kingdom Judo Education Course for Youth</string>
+    <string name="test_desc">Kingdom Championship for clubs, authorities and universities for the first degree in Mecca and the surprise of Safan Saafan Kingdom Championship for clubs, bodies and universities for the first degree in Mecca and surprise Suraan Kingdom Championship for clubs and bodies and universities for the first degree in Makkah and surprise surprise Safto Kingdom of clubs, bodies and universities for the first degree in Mecca and the surprise of Saafan Kingdom of clubs, bodies and universities for the first degree in Mecca and the surprise of Safan Kingdom of clubs and clubs and bodies and universities for the first degree in Makkah and the surprise of Saudi Arabia The championship of clubs and bodies and universities for the first class in Mecca and the surprise of Saafan</string>
+    <string name="last_news">Last news</string>
+    <string name="union_section">Union Section</string>
+    <string name="section">Sections</string>
+    <string name="about_app">About The App</string>
+    <string name="msg_app">The Saudi Judo Federation application is the official application for judo sport in Saudi Arabia, providing the user with all information about the federation and new news
+As well as tournaments, tournaments and other advantages</string>
+    <string name="our_moto">Our motto is to make heroes from young to old</string>
+    <string name="help_us_withe">Help us with your suggestion to continue developing</string>
+    <string name="hint_write_msg">Write your message or suggestion here</string>
+    <string name="send_now">Send now</string>
+    <string name="share_the_app">Share the app</string>
+    <string name="rate_the_app">Rate the app</string>
+    <string name="rescent">The most recent</string>
+    <string name="informations">Info</string>
+    <string name="photos">Photos</string>
+    <string name="rank">Ranks</string>
+    <string name="mangers">Mangers</string>
+    <string name="press_again">Press back again to exit</string>
 
 
 </resources>

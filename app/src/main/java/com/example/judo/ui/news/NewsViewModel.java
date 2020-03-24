@@ -1,5 +1,6 @@
 package com.example.judo.ui.news;
 
+import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -14,9 +15,9 @@ public class NewsViewModel extends ViewModel {
    private RepositoryNews repositoryNews = RepositoryNews.getInstance();
 
 
-    public MutableLiveData<List<NewsItemModel>> getNews(){
+    public MutableLiveData<List<NewsItemModel>> getNews(FragmentActivity activity){
 
-        return repositoryNews.getNews();
+        return repositoryNews.getNews(activity);
 
     }
 }

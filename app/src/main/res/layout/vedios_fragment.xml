@@ -19,7 +19,7 @@
             android:layout_marginTop="@dimen/_20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="الأحدث"
+            android:text="@string/rescent"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sp"
             android:fontFamily="@font/arabic_semi_bold"/>

@@ -28,6 +28,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:src="@drawable/photo_1"
                 android:scaleType="centerCrop"
                 android:id="@+id/topic_image"
                 android:layout_width="112dp"
@@ -38,10 +39,12 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
+                android:layout_marginEnd="@dimen/_20dp"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:orientation="vertical"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/_20dp">
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -15,6 +15,8 @@ import android.widget.Toast;
 import com.example.judo.R;
 import com.example.judo.databinding.ContectUsActivityBinding;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class ContectUsActivity extends AppCompatActivity {
 
     private ContectUsViewModel mViewModel;
@@ -39,6 +41,9 @@ public class ContectUsActivity extends AppCompatActivity {
         });
         mViewModel = ViewModelProviders.of(this).get(ContectUsViewModel.class);
 
+        if(isEnglish()){
+            binding.backContactUs.setImageResource(R.drawable.ic_right_white);
+        }
 
     }
 

@@ -15,7 +15,6 @@
 
 
 
-
             <RelativeLayout
                 android:id="@+id/layout_more"
                 android:layout_width="match_parent"
@@ -36,7 +35,7 @@
                     android:layout_marginRight="16dp"
                     android:fontFamily="@font/arabic_semi_bold"
                     android:gravity="center_vertical"
-                    android:text="اخر الاخبار"
+                    android:text="@string/last_news"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -96,7 +95,7 @@
                 android:layout_marginRight="17dp"
                 android:fontFamily="@font/arabic_semi_bold"
                 android:gravity="center_vertical"
-                android:text="اقسام الاتحاد"
+                android:text="@string/section"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -151,7 +150,7 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="@dimen/_16dp"
                                     android:fontFamily="@font/arabic_semi_bold"
-                                    android:text="اقسام الاتحاد"
+                                    android:text="@string/union_section"
                                     android:textColor="@color/white"
                                     android:textSize="16sp" />
 
@@ -184,7 +183,7 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="@dimen/_24"
                                     android:fontFamily="@font/arabic_semi_bold"
-                                    android:text="عن الإتحاد"
+                                    android:text="@string/about_us"
                                     android:textColor="@color/white"
                                     android:textSize="16sp" />
 
@@ -226,7 +225,7 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="@dimen/_16dp"
                                     android:fontFamily="@font/arabic_semi_bold"
-                                    android:text="تواصل معنا"
+                                    android:text="@string/connect_us"
                                     android:textColor="@color/white"
                                     android:textSize="16sp" />
 
@@ -258,7 +257,7 @@
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="@dimen/_24"
                                     android:fontFamily="@font/arabic_semi_bold"
-                                    android:text="الدورات التدريبية"
+                                    android:text="@string/courses"
                                     android:textColor="@color/white"
                                     android:textSize="16sp" />
 

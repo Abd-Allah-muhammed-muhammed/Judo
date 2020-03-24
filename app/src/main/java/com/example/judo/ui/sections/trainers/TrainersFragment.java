@@ -22,6 +22,8 @@ import com.example.judo.model.sections.SectionModel;
 
 import java.util.List;
 
+import static com.example.judo.helper.HelperMethods.isEnglish;
+
 public class TrainersFragment extends Fragment {
 
     private TrainersViewModel mViewModel;
@@ -37,6 +39,12 @@ public class TrainersFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.trainers_fragment, container, false);
+
+        if (isEnglish()){
+
+            binding.backTrainers.setImageResource(R.drawable.ic_right_white);
+        }
+
         binding.setLifecycleOwner(getViewLifecycleOwner());
         binding.backTrainers.setOnClickListener(new View.OnClickListener() {
             @Override

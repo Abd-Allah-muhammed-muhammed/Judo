@@ -6,17 +6,17 @@
 
         android:id="@+id/_nv_home"
         android:icon="@drawable/ic_home_nav"
-        android:title="الرئيسية" />
+        android:title="@string/Hom" />
     <item
         android:id="@+id/nv_win"
         android:icon="@drawable/ic_win_nav"
-        android:title="البطولات" />
+        android:title="@string/win" />
     <item
         android:id="@+id/nv_videos"
         android:icon="@drawable/ic_video_nav"
-        android:title="الفديوهات" />
+        android:title="@string/videos" />
     <item
         android:id="@+id/nv_more"
         android:icon="@drawable/ic_more_nav"
-        android:title="المزيد" />
+        android:title="@string/mor" />
 </menu>
