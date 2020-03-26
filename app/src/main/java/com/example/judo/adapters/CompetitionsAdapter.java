@@ -51,7 +51,7 @@ public class CompetitionsAdapter extends RecyclerView.Adapter<CompetitionsAdapte
     public void onBindViewHolder(@NonNull final CompetitionsAdapter.VH holder, int position) {
         CompetitionModel competitionModel = list.get(position);
 
-        if (isEnglish()){
+        if (isEnglish(context)){
             if (competitionModel.isOfficial()){
 
                 holder.binding.isOfficial.setImageResource(R.drawable.tag_english);

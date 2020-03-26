@@ -30,7 +30,7 @@ public class NewsDetailsFragment extends Fragment implements View.OnClickListene
 
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_news_details, container, false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
             binding.backDetails.setImageResource(R.drawable.ic_right_white);
         }
         Glide.with(getContext()).load(test).into( binding.imgDetails);

@@ -27,7 +27,7 @@ public class CompetitionDetailsActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_competition_details);
 
 
-        if (isEnglish()){
+        if (isEnglish(this)){
 
 
             binding.backCompDetails.setImageResource(R.drawable.ic_right_white);

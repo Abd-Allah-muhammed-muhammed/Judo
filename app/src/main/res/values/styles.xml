@@ -7,6 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:shadowRadius">25</item>
+
     </style>
 
 </resources>

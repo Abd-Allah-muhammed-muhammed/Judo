@@ -29,7 +29,7 @@ public class UnionGoalsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_union_goals, container, false);
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backGoals.setImageResource(R.drawable.ic_right_black);
         }

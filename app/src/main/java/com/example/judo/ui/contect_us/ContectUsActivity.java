@@ -41,7 +41,7 @@ public class ContectUsActivity extends AppCompatActivity {
         });
         mViewModel = ViewModelProviders.of(this).get(ContectUsViewModel.class);
 
-        if(isEnglish()){
+        if(isEnglish(this)){
             binding.backContactUs.setImageResource(R.drawable.ic_right_white);
         }
 

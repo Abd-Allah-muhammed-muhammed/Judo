@@ -40,7 +40,7 @@ public class TrainersFragment extends Fragment {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.trainers_fragment, container, false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backTrainers.setImageResource(R.drawable.ic_right_white);
         }

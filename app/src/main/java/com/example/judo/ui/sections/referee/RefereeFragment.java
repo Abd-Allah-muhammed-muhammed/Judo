@@ -40,7 +40,7 @@ public class RefereeFragment extends Fragment {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.referee_fragment,container,false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backReferee.setImageResource(R.drawable.ic_right_white);
         }

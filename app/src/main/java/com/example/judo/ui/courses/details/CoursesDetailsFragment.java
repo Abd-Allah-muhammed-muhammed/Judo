@@ -31,7 +31,7 @@ public class CoursesDetailsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.courses_details_fragment, container, false);
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backDetails.setImageResource(R.drawable.ic_right_white);
         }

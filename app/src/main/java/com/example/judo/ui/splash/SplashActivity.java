@@ -4,24 +4,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 
 import com.example.judo.R;
 import com.example.judo.databinding.ActivitySplashBinding;
+import com.example.judo.helper.PrefManager;
 import com.example.judo.model.SliderModelHome;
 import com.example.judo.ui.hom.HomActivity;
+
+import java.util.Locale;
 
 import static com.example.judo.helper.HelperMethods.fullScreen;
 
 public class SplashActivity extends AppCompatActivity {
     Thread splashTread;
     ActivitySplashBinding binding ;
+    private PrefManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         fullScreen(this);
 
+
+        manager = new PrefManager(this);
+
         binding = DataBindingUtil.setContentView(this,R.layout.activity_splash);
+
+        Locale locale = new Locale(manager.getLanguage());
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+       getResources().updateConfiguration(config,
+                getResources().getDisplayMetrics());
+
 
         startSplash();
     }

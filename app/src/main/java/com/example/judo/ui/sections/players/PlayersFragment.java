@@ -41,7 +41,7 @@ public class PlayersFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.players_fragment,container,false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backPlayers.setImageResource(R.drawable.ic_right_white);
         }

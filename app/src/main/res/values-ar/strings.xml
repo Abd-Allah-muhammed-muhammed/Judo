@@ -92,6 +92,11 @@
     <string name="rank">المراكز</string>
     <string name="mangers">المنظمون</string>
     <string name="press_again">من فضلك اضغط مره اخري للخروج</string>
+    <string name="languge">اللغة :</string>
+    <string name="choose_the_language">حدد لغة التطبيق</string>
+    <string name="arabic_language">اللغة العربيه</string>
+    <string name="english_language"> الانجيزية</string>
+    <string name="submit">تطبيق</string>
 
 
 </resources>

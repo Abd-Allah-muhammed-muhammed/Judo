@@ -44,11 +44,17 @@ public final class HelperMethods {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-    public static boolean isEnglish(){
+    public static boolean isEnglish(Context context){
 
-        String lang = Locale.getDefault().getLanguage();
 
-        if (lang.equals("en")){
+
+        PrefManager manager  = new PrefManager(context);
+
+        String language = manager.getLanguage();
+
+
+        if (language.equals("en")){
+
             return true;
 
         }else {

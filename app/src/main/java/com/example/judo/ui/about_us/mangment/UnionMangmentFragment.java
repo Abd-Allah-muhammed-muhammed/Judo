@@ -40,7 +40,7 @@ public class UnionMangmentFragment extends Fragment {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.union_mangment_fragment,container,false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backFounders.setImageResource(R.drawable.ic_right_black);
         }

@@ -40,7 +40,7 @@ public class SectionsFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater,R.layout.sections_fragment, container, false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backSections.setImageResource(R.drawable.ic_right_white);
         }

@@ -40,7 +40,7 @@ public class NewsFragment extends Fragment implements View.OnClickListener {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.news_fragment, container, false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.back.setImageResource(R.drawable.ic_right_white);
         }

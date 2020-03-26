@@ -32,7 +32,7 @@ public class UnionMessageFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.union_message_fragment, container, false);
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
 
             binding.backAbout.setImageResource(R.drawable.ic_right_black);

@@ -40,7 +40,7 @@ public class MangmentFragment extends Fragment {
 
         binding = DataBindingUtil.inflate(inflater,R.layout.mangment_fragment,container,false);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backMangment.setImageResource(R.drawable.ic_right_white);
         }

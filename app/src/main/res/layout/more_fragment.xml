@@ -135,12 +135,58 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <LinearLayout
+
+                    android:id="@+id/layout_languge"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_share_app">
+
+
+                    <ImageView
+                        android:src="@drawable/ic_share_green"
+                        android:layout_width="@dimen/_18"
+                        android:layout_height="@dimen/_18"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+
+                        android:paddingStart="@dimen/_12dp"
+                        android:paddingEnd="@dimen/_12dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="24dp"
+                        android:layout_weight="1"
+                        android:text="@string/languge"
+                        android:fontFamily="@font/arabic_medium"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_14sp"
+                        android:layout_marginLeft="24dp" />
+
+                    <ImageView
+                        android:id="@+id/ic_arrow_green_languge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/ic_arrow_small_green"
+                        android:layout_marginRight="14dp" />
+
+
+                </LinearLayout>
 
 
                 <LinearLayout
 
                     android:id="@+id/layout_share_app"
+                    android:layout_below="@+id/layout_languge"
 
+                    android:layout_marginTop="@dimen/_16dp"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:orientation="horizontal"
@@ -183,6 +229,7 @@
                 </LinearLayout>
                 <LinearLayout
 
+                    android:layout_marginBottom="@dimen/_16dp"
                     android:layout_marginTop="@dimen/_16dp"
                     android:id="@+id/layout_rate_app"
 android:layout_below="@+id/layout_share_app"

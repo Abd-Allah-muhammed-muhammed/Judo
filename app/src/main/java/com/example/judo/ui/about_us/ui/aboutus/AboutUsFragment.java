@@ -41,7 +41,7 @@ public class AboutUsFragment extends Fragment implements View.OnClickListener {
         binding = DataBindingUtil.inflate(inflater,R.layout.about_us_fragment, container, false);
         binding.backAbout.setOnClickListener(this);
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
 
             binding.backAbout.setImageResource(R.drawable.ic_right_white);

@@ -42,7 +42,7 @@ public class KnowUnionFragment extends Fragment {
         });
 
 
-        if (isEnglish()){
+        if (isEnglish(getActivity())){
 
             binding.backAbout.setImageResource(R.drawable.ic_right_black);
 

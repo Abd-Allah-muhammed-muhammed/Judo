@@ -45,15 +45,15 @@ public class SectionsAdapter extends RecyclerView.Adapter<SectionsAdapter.VH> {
 
     @Override
     public void onBindViewHolder(@NonNull SectionsAdapter.VH holder, final int position) {
+        context = holder.itemView.getContext();
 
-        if (isEnglish()){
+        if (isEnglish(context)){
 
 
             holder.binding.icArrowSection.setImageResource(R.drawable.ic_arrow_right);
 
         }
 
-        context = holder.itemView.getContext();
         SectionsInputModel sectionsInputModel = sectionsInputModels.get(position);
         holder.binding.setSections(sectionsInputModel);
 

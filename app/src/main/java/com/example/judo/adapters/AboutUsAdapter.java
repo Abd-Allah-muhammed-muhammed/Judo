@@ -41,15 +41,15 @@ public class AboutUsAdapter extends RecyclerView.Adapter<AboutUsAdapter.VH> {
 
     @Override
     public void onBindViewHolder(@NonNull AboutUsAdapter.VH holder, final int position) {
+        context = holder.itemView.getContext();
 
-        if (isEnglish()){
+        if (isEnglish(context)){
 
 
             holder.binding.layoutAboutUs.setBackgroundResource(R.drawable.bg_about_left);
             holder.binding.icArrowAbout.setImageResource(R.drawable.ic_arrow_right);
 
         }
-        context = holder.itemView.getContext();
         AboutUsModel aboutUsModel = aboutUsModels.get(position);
         holder.binding.setAbout(aboutUsModel);
 
